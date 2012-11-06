@@ -1,0 +1,32 @@
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+<!-- Menu and Header by "The Customized Website" -->
+<!-- Copyright (C) @~CopyrightYears~@ by The Customized Website -->
+<!-- @~ClientName~@ -->
+<!-- Most Recent Update:  @~UpdateDate~@ -->
+
+<script type="text/javascript" src="@~DeployBaseURL~@/Javascripts/ddmenu-P2.js"></script>
+<link rel="stylesheet" href="@~DeployURL~@Stylesheets/TheCustomizedWebsite.css" type="text/css" />
+
+<table id="TCW-header">
+  <tr>
+    <td>
+      <img id="TCW-top_header_pix" src="@~DeployURL~@Images/Top.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td>
+<!-- @@@@@@@ TCW Top Menu @@@@@@@ -->
+<!-- @@@@@@@ TCW Top Menu @@@@@@@ -->
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img id="TCW-header_pix" src="@~DeployURL~@Images/Header.jpg">
+    </td>
+  </tr>
+</table>
+
+<!-- @@@@@@@ TCW Top Menu Script @@@@@@@ -->
+<!-- @@@@@@@ TCW Top Menu Script @@@@@@@ -->
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+

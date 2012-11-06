@@ -1,0 +1,101 @@
+object AboutForm: TAboutForm
+  Left = 315
+  Height = 336
+  Top = 100
+  Width = 407
+  BorderIcons = [biSystemMenu]
+  Caption = 'About'
+  ClientHeight = 336
+  ClientWidth = 407
+  OnShow = FormShow
+  LCLVersion = '1.0.1.3'
+  object Label1: TLabel
+    Left = 16
+    Height = 25
+    Top = 24
+    Width = 198
+    Caption = 'Magic Website Builder'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 14
+    Top = 56
+    Width = 62
+    Caption = 'Version:  0.3'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 14
+    Top = 104
+    Width = 183
+    Caption = 'Copyright © 2012 by Donald R. Ziesig'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 14
+    Top = 128
+    Width = 89
+    Caption = 'Configuration File:'
+    ParentColor = False
+  end
+  object ConfigFileLabel: TLabel
+    Left = 16
+    Height = 56
+    Top = 152
+    Width = 345
+    AutoSize = False
+    Caption = 'ConfigFileLabel'
+    ParentColor = False
+    WordWrap = True
+  end
+  object BitBtn1: TBitBtn
+    Left = 302
+    Height = 30
+    Top = 301
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 0
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 14
+    Top = 72
+    Width = 50
+    Caption = 'Last Build:'
+    ParentColor = False
+  end
+  object LastBuildLabel: TLabel
+    Left = 80
+    Height = 14
+    Top = 72
+    Width = 68
+    Caption = 'LastBuildLabel'
+    ParentColor = False
+  end
+  object DefaultSaveLocationLabel: TLabel
+    Left = 16
+    Height = 46
+    Top = 240
+    Width = 356
+    AutoSize = False
+    Caption = 'DefaultSaveLocationLabel'
+    ParentColor = False
+    WordWrap = True
+  end
+  object Label7: TLabel
+    Left = 16
+    Height = 14
+    Top = 216
+    Width = 106
+    Caption = 'Default Save Location'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,253 @@
+object GeneralFrame: TGeneralFrame
+  Left = 0
+  Height = 630
+  Top = 0
+  Width = 882
+  ClientHeight = 630
+  ClientWidth = 882
+  Color = clMedGray
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 340
+  DesignTop = 236
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 440
+    Top = 16
+    Width = 280
+    Caption = 'General'
+    ClientHeight = 422
+    ClientWidth = 276
+    TabOrder = 0
+    object ClientEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 16
+      Width = 232
+      EditLabel.AnchorSideLeft.Control = ClientEdit
+      EditLabel.AnchorSideBottom.Control = ClientEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = -1
+      EditLabel.Width = 28
+      EditLabel.Caption = 'Client'
+      EditLabel.ParentColor = False
+      TabOrder = 0
+    end
+    object Point2URLEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 64
+      Width = 232
+      EditLabel.AnchorSideLeft.Control = Point2URLEdit
+      EditLabel.AnchorSideBottom.Control = Point2URLEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 47
+      EditLabel.Width = 50
+      EditLabel.Caption = 'Point2URL'
+      EditLabel.ParentColor = False
+      TabOrder = 1
+    end
+    object IDXURLEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 112
+      Width = 232
+      EditLabel.AnchorSideLeft.Control = IDXURLEdit
+      EditLabel.AnchorSideBottom.Control = IDXURLEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 95
+      EditLabel.Width = 40
+      EditLabel.Caption = 'IDX URL'
+      EditLabel.ParentColor = False
+      TabOrder = 2
+    end
+    object WolfnetURLEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 160
+      Width = 232
+      EditLabel.AnchorSideLeft.Control = WolfnetURLEdit
+      EditLabel.AnchorSideBottom.Control = WolfnetURLEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 143
+      EditLabel.Width = 61
+      EditLabel.Caption = 'Wolfnet URL'
+      EditLabel.ParentColor = False
+      TabOrder = 3
+    end
+    object ZHouseURLEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 208
+      Width = 232
+      EditLabel.AnchorSideLeft.Control = ZHouseURLEdit
+      EditLabel.AnchorSideBottom.Control = ZHouseURLEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 191
+      EditLabel.Width = 62
+      EditLabel.Caption = 'Z House URL'
+      EditLabel.ParentColor = False
+      TabOrder = 4
+    end
+    object NoHostURLEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 268
+      Width = 232
+      EditLabel.AnchorSideLeft.Control = NoHostURLEdit
+      EditLabel.AnchorSideBottom.Control = NoHostURLEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 251
+      EditLabel.Width = 61
+      EditLabel.Caption = 'No Host URL'
+      EditLabel.ParentColor = False
+      TabOrder = 5
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 315
+    Height = 264
+    Top = 8
+    Width = 461
+    Caption = 'Customization Link'
+    ClientHeight = 246
+    ClientWidth = 457
+    TabOrder = 1
+    object CustomizationLinkMemo: TMemo
+      Left = 21
+      Height = 128
+      Top = 16
+      Width = 423
+      TabOrder = 0
+    end
+    object GroupBox6: TGroupBox
+      Left = 163
+      Height = 69
+      Top = 152
+      Width = 137
+      Caption = 'Hover Foreground'
+      ClientHeight = 51
+      ClientWidth = 133
+      TabOrder = 1
+      inline HoverForegroundFrame: TColorFrame
+        Left = 14
+      end
+    end
+    object GroupBox7: TGroupBox
+      Left = 307
+      Height = 73
+      Top = 152
+      Width = 137
+      Caption = 'Hover Background'
+      ClientHeight = 55
+      ClientWidth = 133
+      TabOrder = 2
+      inline HoverBackgroundFrame: TColorFrame
+        Left = 6
+      end
+    end
+    object GroupBox8: TGroupBox
+      Left = 27
+      Height = 69
+      Top = 152
+      Width = 137
+      Caption = 'Link Background'
+      ClientHeight = 51
+      ClientWidth = 133
+      TabOrder = 3
+      inline LinkBackgroundFrame: TColorFrame
+        Left = -2
+      end
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 312
+    Height = 82
+    Top = 376
+    Width = 464
+    Caption = 'Copyright'
+    ClientHeight = 64
+    ClientWidth = 460
+    TabOrder = 2
+    object CopyrightInitialYearEdit: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 24
+      Width = 48
+      EditLabel.AnchorSideLeft.Control = CopyrightInitialYearEdit
+      EditLabel.AnchorSideBottom.Control = CopyrightInitialYearEdit
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 7
+      EditLabel.Width = 52
+      EditLabel.Caption = 'Initial Year'
+      EditLabel.ParentColor = False
+      TabOrder = 0
+    end
+    object CopyrightByEdit: TLabeledEdit
+      Left = 78
+      Height = 21
+      Top = 24
+      Width = 354
+      EditLabel.AnchorSideLeft.Control = CopyrightByEdit
+      EditLabel.AnchorSideBottom.Control = CopyrightByEdit
+      EditLabel.Left = 78
+      EditLabel.Height = 14
+      EditLabel.Top = 7
+      EditLabel.Width = 13
+      EditLabel.Caption = 'By'
+      EditLabel.ParentColor = False
+      TabOrder = 1
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 314
+    Height = 73
+    Top = 288
+    Width = 462
+    Caption = 'Default Title'
+    ClientHeight = 55
+    ClientWidth = 458
+    TabOrder = 3
+    object DefaultTitleEdit: TEdit
+      Left = 22
+      Height = 21
+      Top = 16
+      Width = 408
+      TabOrder = 0
+    end
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 114
+    top = 13
+  end
+end

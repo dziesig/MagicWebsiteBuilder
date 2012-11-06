@@ -1,0 +1,1971 @@
+object MWBMain: TMWBMain
+  Left = 98
+  Height = 812
+  Top = 20
+  Width = 1174
+  Caption = 'Magic Website Builder'
+  ClientHeight = 792
+  ClientWidth = 1174
+  Menu = MainMenu1
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnResize = FormResize
+  ShowHint = True
+  LCLVersion = '1.0.2.0'
+  WindowState = wsMaximized
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 1174
+    Caption = 'ToolBar1'
+    Images = ImageList1
+    TabOrder = 0
+    object ToolButton1: TToolButton
+      Left = 1
+      Top = 2
+      Action = FileNew1
+    end
+    object ToolButton2: TToolButton
+      Left = 24
+      Top = 2
+      Width = 10
+      Caption = 'ToolButton2'
+      Style = tbsSeparator
+    end
+    object ToolButton3: TToolButton
+      Left = 34
+      Top = 2
+      Action = FileOpen1
+    end
+    object ToolButton4: TToolButton
+      Left = 57
+      Top = 2
+      Action = FileSave1
+    end
+    object ToolButton5: TToolButton
+      Left = 80
+      Top = 2
+      Width = 10
+      Caption = 'ToolButton5'
+      Style = tbsSeparator
+    end
+    object ToolButton6: TToolButton
+      Left = 90
+      Top = 2
+      Action = FilePrinterSetup
+    end
+    object ToolButton7: TToolButton
+      Left = 113
+      Top = 2
+      Action = FilePrint1
+    end
+    object ToolButton8: TToolButton
+      Left = 136
+      Top = 2
+      Width = 10
+      Caption = 'ToolButton8'
+      Style = tbsSeparator
+    end
+    object ToolButton9: TToolButton
+      Left = 146
+      Top = 2
+      Action = WebsiteGenerate1
+    end
+    object ToolButton10: TToolButton
+      Left = 169
+      Top = 2
+      Action = WebsiteDeploy1
+    end
+    object ToolButton11: TToolButton
+      Left = 192
+      Top = 2
+      Width = 10
+      Caption = 'ToolButton11'
+      Style = tbsSeparator
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 769
+    Width = 1174
+    Panels = <    
+      item
+        Width = 220
+      end    
+      item
+        Width = 350
+      end    
+      item
+        Width = 80
+      end>
+    SimplePanel = False
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 743
+    Top = 26
+    Width = 1174
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 2
+    OnChange = PageControl1Change
+    OnChanging = PageControl1Changing
+    object TabSheet1: TTabSheet
+      Caption = 'General'
+      ClientHeight = 717
+      ClientWidth = 1166
+      inline GeneralFrame1: TGeneralFrame
+        Height = 717
+        Width = 1166
+        Align = alClient
+        ClientHeight = 717
+        ClientWidth = 1166
+        Color = clCream
+        DesignTop = 219
+        inherited GroupBox1: TGroupBox
+          Left = 28
+          Top = 24
+          inherited ClientEdit: TLabeledEdit
+            EditLabel.Width = 232
+          end
+          inherited Point2URLEdit: TLabeledEdit
+            EditLabel.Width = 232
+          end
+          inherited IDXURLEdit: TLabeledEdit
+            EditLabel.Width = 232
+          end
+          inherited WolfnetURLEdit: TLabeledEdit
+            EditLabel.Width = 232
+          end
+          inherited ZHouseURLEdit: TLabeledEdit
+            EditLabel.Width = 232
+          end
+          inherited NoHostURLEdit: TLabeledEdit
+            EditLabel.Width = 232
+          end
+        end
+        inherited GroupBox2: TGroupBox
+          inherited GroupBox6: TGroupBox
+            inherited HoverForegroundFrame: TColorFrame
+              Left = 14
+              inherited ColorEdit: TLabeledEdit
+                EditLabel.Width = 64
+              end
+            end
+          end
+          inherited GroupBox7: TGroupBox
+            inherited HoverBackgroundFrame: TColorFrame
+              Left = 6
+              inherited ColorEdit: TLabeledEdit
+                EditLabel.Width = 64
+              end
+            end
+          end
+          inherited GroupBox8: TGroupBox
+            inherited LinkBackgroundFrame: TColorFrame
+              Left = -2
+              inherited ColorEdit: TLabeledEdit
+                EditLabel.Width = 64
+              end
+            end
+          end
+        end
+        inherited GroupBox3: TGroupBox
+          Height = 88
+          ClientHeight = 70
+          inherited CopyrightInitialYearEdit: TLabeledEdit
+            EditLabel.Width = 48
+          end
+          inherited CopyrightByEdit: TLabeledEdit
+            EditLabel.Width = 354
+          end
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Images and Background Colors'
+      ClientHeight = 717
+      ClientWidth = 1166
+      inline ImagesAndBGFrame1: TImagesAndBGFrame
+        Height = 717
+        Width = 1166
+        Align = alClient
+        ClientHeight = 717
+        ClientWidth = 1166
+        inherited GroupBox1: TGroupBox
+          Color = clSilver
+          inherited BackgroundImage: TImage
+            OnClick = BackgroundImageClick
+          end
+        end
+        inherited GroupBox5: TGroupBox
+          inherited BackgroundColorFrame: TColorFrame
+            Left = 6
+            Top = 1
+            inherited ColorEdit: TLabeledEdit
+              EditLabel.Width = 64
+            end
+          end
+        end
+        inherited GroupBox6: TGroupBox
+          inherited BodyColorFrame: TColorFrame
+            Left = 6
+            inherited ColorEdit: TLabeledEdit
+              Left = 1
+              Top = 17
+              EditLabel.Left = 1
+              EditLabel.Top = 0
+              EditLabel.Width = 64
+            end
+          end
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Menus'
+      ClientHeight = 709
+      ClientWidth = 1170
+      inline MenuSelectFrame1: TMenuSelectFrame
+        Height = 653
+        Width = 1094
+        Align = alClient
+        ClientHeight = 653
+        ClientWidth = 1094
+        DesignLeft = 388
+        DesignTop = 185
+        inherited PageControl1: TPageControl
+          Height = 653
+          Width = 1094
+          ActivePage = nil
+          TabIndex = -1
+          inherited TabSheet1: TTabSheet
+            ClientHeight = 649
+            ClientWidth = 1090
+            inherited PrimaryMenuPositionRG: TRadioGroup
+              Width = 1086
+              ClientHeight = 27
+              ClientWidth = 1082
+            end
+            inherited Panel2: TPanel
+              Top = 609
+              Width = 1086
+            end
+            inherited MenusFrame1: TMenusFrame
+              Height = 564
+              Top = 45
+              Width = 1086
+              Align = alClient
+              ClientHeight = 564
+              ClientWidth = 1086
+              TabOrder = 2
+              DesignLeft = 549
+              inherited PageControl1: TPageControl
+                Height = 546
+                Width = 1086
+                ActivePage = nil
+                TabIndex = -1
+                inherited TabSheet1: TTabSheet
+                  ClientHeight = 542
+                  ClientWidth = 1082
+                  inherited MenuItemFrame1: TMenuItemFrame
+                    Height = 446
+                    Width = 1067
+                    Align = alClient
+                    ClientHeight = 446
+                    ClientWidth = 1067
+                    PopupMenu = MenuSelectFrame1.MenusFrame1.MenuItemFrame1.PopupMenu1
+                    TabOrder = 1
+                    DesignLeft = 119
+                    inherited TreeView1: TTreeView
+                      Height = 401
+                      DefaultItemHeight = 15
+                      ShowLines = True
+                      ShowRoot = True
+                      OnChanging = nil
+                    end
+                    inherited AddButton: TButton
+                      OnClick = nil
+                    end
+                    inherited GroupBox1: TGroupBox
+                      ClientHeight = 414
+                      inherited HostRG: TRadioGroup
+                        ClientHeight = 27
+                      end
+                      inherited GroupBox21: TGroupBox
+                        ClientHeight = 43
+                      end
+                      inherited GroupBox2: TGroupBox
+                        ClientHeight = 180
+                        inherited ColorFrame1: TColorFrame
+                          Left = 22
+                          Height = 73
+                          Top = 64
+                          Width = 113
+                          ClientHeight = 73
+                          ClientWidth = 113
+                          TabOrder = 4
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorEdit: TLabeledEdit
+                            Height = 27
+                            EditLabel.Height = 18
+                            EditLabel.Top = 0
+                            EditLabel.Width = 64
+                          end
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        ClientHeight = 180
+                        inherited ColorFrame2: TColorFrame
+                          Left = 13
+                          Height = 73
+                          Top = 63
+                          Width = 113
+                          ClientHeight = 73
+                          ClientWidth = 113
+                          TabOrder = 4
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorEdit: TLabeledEdit
+                            Height = 27
+                            EditLabel.Height = 18
+                            EditLabel.Top = 0
+                            EditLabel.Width = 64
+                          end
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                    end
+                    inherited Label1: TLabel
+                      Top = 425
+                    end
+                  end
+                end
+                inherited TabSheet2: TTabSheet
+                  ClientHeight = 542
+                  ClientWidth = 1082
+                  inherited GeneralCSSFrame1: TGeneralCSSFrame
+                    Height = 532
+                    Width = 878
+                    Align = alClient
+                    ClientHeight = 532
+                    ClientWidth = 878
+                    DesignLeft = 782
+                    DesignTop = 154
+                    inherited Label1: TLabel
+                      Top = 515
+                    end
+                    inherited GroupBox1: TGroupBox
+                      inherited GroupBox2: TGroupBox
+                        inherited ColorFrame1: TColorFrame
+                          Left = -2
+                          Height = 49
+                          Width = 105
+                          ClientHeight = 49
+                          ClientWidth = 105
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        inherited ColorFrame2: TColorFrame
+                          Left = -2
+                          Height = 49
+                          Width = 109
+                          ClientHeight = 49
+                          ClientWidth = 109
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorEdit: TLabeledEdit
+                            Left = 4
+                            Top = 18
+                            EditLabel.Left = 4
+                            EditLabel.Top = 1
+                          end
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+                inherited TabSheet3: TTabSheet
+                  ClientHeight = 542
+                  ClientWidth = 1082
+                  inherited MenuCSSFrame1: TMenuCSSFrame
+                    Height = 532
+                    Width = 878
+                    Align = alClient
+                    ClientHeight = 532
+                    ClientWidth = 878
+                    DesignLeft = 841
+                    DesignTop = 146
+                    inherited Label1: TLabel
+                      Top = 520
+                    end
+                    inherited GroupBox1: TGroupBox
+                      inherited GroupBox2: TGroupBox
+                        inherited ColorFrame1: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        inherited ColorFrame2: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox4: TGroupBox
+                        inherited ColorFrame3: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox5: TGroupBox
+                        inherited ColorFrame4: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                    end
+                    inherited GroupBox6: TGroupBox
+                      inherited GroupBox7: TGroupBox
+                        inherited ColorFrame5: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox8: TGroupBox
+                        inherited ColorFrame6: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox9: TGroupBox
+                        inherited ColorFrame7: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox10: TGroupBox
+                        inherited ColorFrame8: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                    end
+                    inherited GroupBox16: TGroupBox
+                      inherited TextSizeLabel: TLabel
+                        Width = 19
+                        Caption = '7px'
+                      end
+                      inherited TextSizeTB: TTrackBar
+                        Max = 28
+                        Min = 8
+                        OnChange = nil
+                      end
+                    end
+                  end
+                end
+                inherited TabSheet4: TTabSheet
+                  ClientHeight = 542
+                  ClientWidth = 1082
+                  inherited IDXHdrFtrFrame1: TIDXHdrFtrFrame
+                    Height = 532
+                    Width = 878
+                    Align = alClient
+                    ClientHeight = 532
+                    ClientWidth = 878
+                    inherited Label1: TLabel
+                      Top = 517
+                    end
+                    inherited GroupBox1: TGroupBox
+                      inherited GroupBox2: TGroupBox
+                        inherited GroupBox4: TGroupBox
+                          inherited ColorFrame1: TColorFrame
+                            Left = -2
+                          end
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        inherited GroupBox5: TGroupBox
+                          inherited ColorFrame2: TColorFrame
+                            Left = -2
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+              inherited Panel1: TPanel
+                Top = 546
+                Width = 1086
+              end
+            end
+          end
+          inherited TabSheet2: TTabSheet
+            ClientHeight = 649
+            ClientWidth = 1090
+            inherited SecondaryMenuPositionRG: TRadioGroup
+              Width = 1086
+              ClientHeight = 27
+              ClientWidth = 1082
+            end
+            inherited Panel1: TPanel
+              Top = 684
+              Width = 1086
+            end
+            inherited MenusFrame2: TMenusFrame
+              Height = 639
+              Top = 45
+              Width = 1086
+              Align = alClient
+              ClientHeight = 639
+              ClientWidth = 1086
+              TabOrder = 2
+              DesignLeft = 549
+              inherited PageControl1: TPageControl
+                Height = 621
+                Width = 1086
+                ActivePage = nil
+                TabIndex = -1
+                inherited TabSheet1: TTabSheet
+                  ClientHeight = 617
+                  ClientWidth = 1082
+                  inherited MenuItemFrame1: TMenuItemFrame
+                    Height = 446
+                    Width = 1067
+                    Align = alClient
+                    ClientHeight = 446
+                    ClientWidth = 1067
+                    PopupMenu = MenuSelectFrame1.MenusFrame2.MenuItemFrame1.PopupMenu1
+                    TabOrder = 1
+                    DesignLeft = 119
+                    inherited TreeView1: TTreeView
+                      Height = 401
+                      DefaultItemHeight = 15
+                      ShowLines = True
+                      ShowRoot = True
+                      OnChanging = nil
+                    end
+                    inherited AddButton: TButton
+                      OnClick = nil
+                    end
+                    inherited GroupBox1: TGroupBox
+                      ClientHeight = 414
+                      inherited HostRG: TRadioGroup
+                        ClientHeight = 27
+                      end
+                      inherited GroupBox21: TGroupBox
+                        ClientHeight = 43
+                      end
+                      inherited GroupBox2: TGroupBox
+                        ClientHeight = 180
+                        inherited ColorFrame1: TColorFrame
+                          Left = 22
+                          Height = 73
+                          Top = 64
+                          Width = 113
+                          ClientHeight = 73
+                          ClientWidth = 113
+                          TabOrder = 4
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorEdit: TLabeledEdit
+                            Height = 27
+                            EditLabel.Height = 18
+                            EditLabel.Top = 0
+                            EditLabel.Width = 64
+                          end
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        ClientHeight = 180
+                        inherited ColorFrame2: TColorFrame
+                          Left = 13
+                          Height = 73
+                          Top = 63
+                          Width = 113
+                          ClientHeight = 73
+                          ClientWidth = 113
+                          TabOrder = 4
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorEdit: TLabeledEdit
+                            Height = 27
+                            EditLabel.Height = 18
+                            EditLabel.Top = 0
+                            EditLabel.Width = 64
+                          end
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                    end
+                    inherited Label1: TLabel
+                      Top = 425
+                    end
+                  end
+                end
+                inherited TabSheet2: TTabSheet
+                  ClientHeight = 617
+                  ClientWidth = 1082
+                  inherited GeneralCSSFrame1: TGeneralCSSFrame
+                    Height = 532
+                    Width = 878
+                    Align = alClient
+                    ClientHeight = 532
+                    ClientWidth = 878
+                    DesignLeft = 782
+                    DesignTop = 154
+                    inherited Label1: TLabel
+                      Top = 515
+                    end
+                    inherited GroupBox1: TGroupBox
+                      inherited GroupBox2: TGroupBox
+                        inherited ColorFrame1: TColorFrame
+                          Left = -2
+                          Height = 49
+                          Width = 105
+                          ClientHeight = 49
+                          ClientWidth = 105
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        inherited ColorFrame2: TColorFrame
+                          Left = -2
+                          Height = 49
+                          Width = 109
+                          ClientHeight = 49
+                          ClientWidth = 109
+                          DesignLeft = 506
+                          DesignTop = 137
+                          inherited ColorEdit: TLabeledEdit
+                            Left = 4
+                            Top = 18
+                            EditLabel.Left = 4
+                            EditLabel.Top = 1
+                          end
+                          inherited ColorDialog1: TColorDialog
+                            left = 114
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+                inherited TabSheet3: TTabSheet
+                  ClientHeight = 617
+                  ClientWidth = 1082
+                  inherited MenuCSSFrame1: TMenuCSSFrame
+                    Height = 532
+                    Width = 878
+                    Align = alClient
+                    ClientHeight = 532
+                    ClientWidth = 878
+                    DesignLeft = 841
+                    DesignTop = 146
+                    inherited Label1: TLabel
+                      Top = 520
+                    end
+                    inherited GroupBox1: TGroupBox
+                      inherited GroupBox2: TGroupBox
+                        inherited ColorFrame1: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        inherited ColorFrame2: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox4: TGroupBox
+                        inherited ColorFrame3: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox5: TGroupBox
+                        inherited ColorFrame4: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                    end
+                    inherited GroupBox6: TGroupBox
+                      inherited GroupBox7: TGroupBox
+                        inherited ColorFrame5: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox8: TGroupBox
+                        inherited ColorFrame6: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox9: TGroupBox
+                        inherited ColorFrame7: TColorFrame
+                          Left = 6
+                          Top = -3
+                        end
+                      end
+                      inherited GroupBox10: TGroupBox
+                        inherited ColorFrame8: TColorFrame
+                          Left = 4
+                          Top = -3
+                        end
+                      end
+                    end
+                    inherited GroupBox16: TGroupBox
+                      inherited TextSizeLabel: TLabel
+                        Width = 19
+                        Caption = '7px'
+                      end
+                      inherited TextSizeTB: TTrackBar
+                        Max = 28
+                        Min = 8
+                        OnChange = nil
+                      end
+                    end
+                  end
+                end
+                inherited TabSheet4: TTabSheet
+                  ClientHeight = 617
+                  ClientWidth = 1082
+                  inherited IDXHdrFtrFrame1: TIDXHdrFtrFrame
+                    Height = 532
+                    Width = 878
+                    Align = alClient
+                    ClientHeight = 532
+                    ClientWidth = 878
+                    inherited Label1: TLabel
+                      Top = 517
+                    end
+                    inherited GroupBox1: TGroupBox
+                      inherited GroupBox2: TGroupBox
+                        inherited GroupBox4: TGroupBox
+                          inherited ColorFrame1: TColorFrame
+                            Left = -2
+                          end
+                        end
+                      end
+                      inherited GroupBox3: TGroupBox
+                        inherited GroupBox5: TGroupBox
+                          inherited ColorFrame2: TColorFrame
+                            Left = -2
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+              inherited Panel1: TPanel
+                Top = 621
+                Width = 1086
+              end
+            end
+          end
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Debug'
+      ClientHeight = 709
+      ClientWidth = 1170
+      object Memo1: TMemo
+        Left = 38
+        Height = 592
+        Top = 25
+        Width = 1072
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Lines.Strings = (
+          'Memo1'
+        )
+        ScrollBars = ssAutoBoth
+        TabOrder = 0
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    left = 40
+    top = 96
+    object FileNew1: TAction
+      Category = 'File'
+      Caption = 'New'
+      Hint = '|Create New Website'
+      ImageIndex = 0
+      OnExecute = FileNew1Execute
+    end
+    object FileOpen1: TAction
+      Category = 'File'
+      Caption = 'Open'
+      Hint = '|Open Existing Website'
+      ImageIndex = 2
+      OnExecute = FileOpen1Execute
+    end
+    object FileSave1: TAction
+      Category = 'File'
+      Caption = 'Save'
+      Hint = '|Save Current Website File'
+      ImageIndex = 4
+      OnExecute = FileSave1Execute
+    end
+    object FileSaveAs1: TAction
+      Category = 'File'
+      Caption = 'Save As ...'
+      Hint = '|Save Current Website with new File Name'
+      OnExecute = FileSaveAs1Execute
+    end
+    object FileExit1: TAction
+      Category = 'File'
+      Caption = 'Exit'
+      Hint = '|Exit Program'
+      OnExecute = FileExit1Execute
+    end
+    object FilePreferences1: TAction
+      Category = 'File'
+      Caption = 'Preferences ...'
+      Hint = '|Set Website Preferences'
+      ImageIndex = 12
+      OnExecute = FilePreferences1Execute
+    end
+    object FilePrinterSetup: TAction
+      Category = 'File'
+      Caption = 'Printer Setup ...'
+      Hint = '|Setup Printer'
+      ImageIndex = 14
+      OnExecute = FilePrinterSetupExecute
+    end
+    object FilePrint1: TAction
+      Category = 'File'
+      Caption = 'Print ...'
+      Hint = '|Print Report'
+      ImageIndex = 16
+      OnExecute = FilePrint1Execute
+    end
+    object WebsiteGenerate1: TAction
+      Category = 'Website'
+      Caption = 'Generate'
+      Hint = 'Generate Website Files'
+      ImageIndex = 18
+      OnExecute = WebsiteGenerate1Execute
+    end
+    object WebsiteDeploy1: TAction
+      Category = 'Website'
+      Caption = 'Deploy'
+      Hint = 'Deploy Website Files'
+      ImageIndex = 20
+      OnExecute = WebsiteDeploy1Execute
+    end
+    object HelpAbout1: TAction
+      Category = 'Help'
+      Caption = 'About'
+      OnExecute = HelpAbout1Execute
+    end
+  end
+  object MainMenu1: TMainMenu
+    Images = ImageList1
+    left = 40
+    top = 200
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      object MenuItem2: TMenuItem
+        Action = FileNew1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080000080
+          800000808000008080000080800000808000008080000080800000FFFFFF0080
+          8000008080000080800000808000008080000080800000FFFFFF0080800000FF
+          FFFF00FFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF7F7F
+          7FFF7F7F7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF00808000008080000080
+          800000FFFFFF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF00FFFFFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF008080000080800000FFFFFF00FF
+          FFFF00FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF00FFFFFF00FFFFFF008080000080800000FF
+          FFFF00FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF00FFFFFF00FFFFFF00FFFFFF008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+          00FF000000FF000000FF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFFFFFFFFFF000000FF00808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFF000000FF00FFFFFF00808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+          00FF0080800000FFFFFF00FFFFFF008080000080800000808000008080000080
+          800000FFFFFF000000FF000000FF000000FF000000FF000000FF000000FF0080
+          8000008080000080800000FFFFFF00FFFFFF00808000008080000080800000FF
+          FFFF00FFFFFF0080800000808000008080000080800000FFFFFF00FFFFFF0080
+          800000808000008080000080800000FFFFFF00FFFFFF0080800000FFFFFF0080
+          8000008080000080800000808000008080000080800000FFFFFF008080000080
+          8000008080000080800000808000008080000080800000FFFFFF
+        }
+      end
+      object MenuItem3: TMenuItem
+        Action = FileOpen1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080000080
+          800000808000008080000080800000808000008080000080800000FFFFFF0080
+          8000008080000080800000808000008080000080800000FFFFFF0080800000FF
+          FFFF00FFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF7F7F
+          7FFF7F7F7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF00808000008080000080
+          800000FFFFFF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF00FFFFFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF0080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFF008080000080800000FFFFFF00FF
+          FFFF00FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF00FFFFFF00FFFFFF008080000080800000FF
+          FFFF00FFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF00FFFFFF00FFFFFF00FFFFFF008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+          00FF000000FF000000FF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFFFFFFFFFF000000FF00808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFF000000FF00FFFFFF00808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+          00FF0080800000FFFFFF00FFFFFF008080000080800000808000008080000080
+          800000FFFFFF000000FF000000FF000000FF000000FF000000FF000000FF0080
+          8000008080000080800000FFFFFF00FFFFFF00808000008080000080800000FF
+          FFFF00FFFFFF0080800000808000008080000080800000FFFFFF00FFFFFF0080
+          800000808000008080000080800000FFFFFF00FFFFFF0080800000FFFFFF0080
+          8000008080000080800000808000008080000080800000FFFFFF008080000080
+          8000008080000080800000808000008080000080800000FFFFFF
+        }
+      end
+      object MenuItem4: TMenuItem
+        Action = FileSave1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080000080
+          8000008080000080800000808000008080000080800000808000000000FF0000
+          00FF7F7F7FFF000000FF7F7F7FFF7F7F7FFF000000FF000000FF008080000080
+          8000008080000080800000808000008080000080800000808000000000FF0000
+          00FFBFBFBFFF000000FFBFBFBFFFBFBFBFFF000000FF000000FF008080000080
+          8000008080000080800000808000008080000080800000808000000000FF0000
+          00FFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFF000000FF000000FF008080000080
+          8000008080000080800000808000008080000080800000808000000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FFFFFF
+          FFFF000000FF000000FFFFFFFFFF000000FF000000FFBFBFBFFF000000FFFF00
+          00FFFF0000FFFF0000FF0000FFFFFF0000FFFF0000FF000000FF000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+          00FF008080000000FFFF0000FFFF0000FFFF0080800000808000000000FFFFFF
+          FFFF000000FF000000FF000000FF000000FFFFFFFFFF000000FFFFFFFFFF0000
+          00FF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00808000000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+          FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF000000FFFFFF
+          FFFF000000FF000000FFFFFFFFFF000000FF000000FF000000FF000000FF0000
+          00FF008080000000FFFF0000FFFF0000FFFF0080800000808000000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000FF0080
+          8000008080000000FFFF0000FFFF0000FFFF0080800000808000000000FFFFFF
+          FFFF000000FFBFBFBFFFFFFFFFFF000000FFFFFFFFFF000000FF008080000080
+          80007F7F7FFF0000FFFF0000FFFF0000FFFF0080800000808000000000FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF008080000000FFFF0000
+          FFFF0000FFFF0000FFFF0000FFFF008080000080800000808000000000FF0000
+          00FF000000FF000000FF000000FF000000FF0080800000808000008080000080
+          8000008080000080800000808000008080000080800000808000
+        }
+      end
+      object MenuItem5: TMenuItem
+        Action = FileSaveAs1
+      end
+      object MenuItem6: TMenuItem
+        Caption = '__________'
+      end
+      object MenuItem7: TMenuItem
+        Action = FilePrinterSetup
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080000000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF00808000000000FFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFF000000FF000000FFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFF000000FF000000FFBFBF
+          BFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+          BFFFFFFFFFFFBFBFBFFFFFFFFFFF0000FFFFFFFFFFFF000000FF000000FFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFF000000FF000000FF000000FF000000FFFFFF
+          FFFF000000FFFFFFFFFF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFF000000FF000000FFFFFFFFFF000000FF0000
+          00FF000000FF000000FF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFFFFFFFFFF000000FF00808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFF000000FFBFBFBFFFFFFFFFFF000000FFFFFF
+          FFFF000000FF0080800000808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+          00FF008080000080800000808000008080000080800000808000008080000080
+          800000808000000000FF000000FF000000FF000000FF000000FF000000FF0080
+          8000008080000080800000808000008080000080800000808000
+        }
+      end
+      object MenuItem8: TMenuItem
+        Action = FilePrint1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080000000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF00808000000000FFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFF000000FF000000FFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+          BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFF000000FF000000FFBFBF
+          BFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+          BFFFFFFFFFFFBFBFBFFFFFFFFFFF0000FFFFFFFFFFFF000000FF000000FFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+          FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+          00FF000000FF000000FF000000FF000000FF000000FF000000FF008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFF000000FF000000FF000000FF000000FFFFFF
+          FFFF000000FFFFFFFFFF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFF000000FF000000FFFFFFFFFF000000FF0000
+          00FF000000FF000000FF000000FF008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFF
+          FFFFFFFFFFFF000000FF00808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFF000000FFBFBFBFFFFFFFFFFF000000FFFFFF
+          FFFF000000FF0080800000808000008080000080800000808000008080000080
+          800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF0000
+          00FF008080000080800000808000008080000080800000808000008080000080
+          800000808000000000FF000000FF000000FF000000FF000000FF000000FF0080
+          8000008080000080800000808000008080000080800000808000
+        }
+      end
+      object MenuItem9: TMenuItem
+        Caption = '__________'
+      end
+      object MenuItem10: TMenuItem
+        Action = FilePreferences1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080007F7F
+          7FFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF000000FF00808000008080000080
+          80000080800000808000008080000080800000808000000000FFBFBFBFFF7F7F
+          7FFF000000FF7F7F7FFF000000FF000000FF000000FF00808000008080000080
+          8000008080007F7F7FFF000000FF7F7F7FFF00808000000000FF000000FF0000
+          00FF7F7F7FFF7F7F7FFF000000FF008080000080800000808000008080000080
+          800000808000000000FF7F7F7FFF000000FF000000FF000000FFBFBFBFFFBFBF
+          BFFF7F7F7FFF000000FF000000FF7F7F7FFF0080800000808000008080000080
+          8000008080007F7F7FFF000000FF000000FF7F7F7FFF7F7F7FFF7F7F7FFF0000
+          00FF000000FF000000FF7F7F7FFF000000FF0080800000808000008080000080
+          80000080800000808000000000FF7F7F7FFF7F7F7FFF000000FF7F7F7FFF0000
+          00FF008080007F7F7FFF000000FF7F7F7FFF0080800000808000008080000080
+          8000000000FF000000FF000000FFBFBFBFFF000000FF7F7F7FFF000000FF0000
+          00FF008080000080800000808000008080000080800000808000008080000080
+          8000000000FF7F7F7FFF7F7F7FFFBFBFBFFF000000FFBFBFBFFF008080000080
+          800000808000000000FF000000FF000000FF0080800000808000008080000080
+          8000000000FF000000FF000000FFBFBFBFFF000000FF7F7F7FFF000000FF7F7F
+          7FFF00808000000000FF7F7F7FFF000000FF008080007F7F7FFF000000FF7F7F
+          7FFF0080800000808000000000FF7F7F7FFFBFBFBFFF000000FF7F7F7FFF0000
+          00FF000000FF000000FF7F7F7FFF000000FF000000FF000000FF7F7F7FFF0000
+          00FF008080007F7F7FFF000000FF000000FF7F7F7FFFBFBFBFFF000000FF0000
+          00FF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF000000FF000000FF7F7F
+          7FFF00808000000000FF7F7F7FFF000000FF000000FF000000FF000000FF7F7F
+          7FFF7F7F7FFF000000FF000000FF000000FF7F7F7FFF7F7F7FFF000000FF0080
+          8000008080007F7F7FFF000000FF7F7F7FFF00808000000000FF000000FFBFBF
+          BFFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF000000FF7F7F7FFF000000FF0000
+          00FF000000FF00808000008080000080800000808000000000FF7F7F7FFFBFBF
+          BFFF000000FFBFBFBFFF000000FF7F7F7FFF000000FF7F7F7FFF7F7F7FFF7F7F
+          7FFF000000FF0080800000808000008080000080800000808000000000FFBFBF
+          BFFF000000FF7F7F7FFFBFBFBFFF7F7F7FFF000000FF7F7F7FFF000000FF0000
+          00FF000000FF0080800000808000008080000080800000808000000000FF7F7F
+          7FFFBFBFBFFF000000FF000000FF000000FF7F7F7FFF7F7F7FFF000000FF0080
+          8000008080000080800000808000008080000080800000808000
+        }
+      end
+      object MenuItem11: TMenuItem
+        Caption = '__________'
+      end
+      object MenuItem12: TMenuItem
+        Action = FileExit1
+      end
+    end
+    object WebsiteMenuItem1: TMenuItem
+      Caption = 'Website'
+      object MenuItem14: TMenuItem
+        Action = WebsiteGenerate1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000008080007F7F
+          7FFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF000000FF00808000008080000080
+          80000080800000808000008080000080800000808000000000FFBFBFBFFF7F7F
+          7FFF000000FF7F7F7FFF000000FF000000FF000000FF00808000008080000080
+          8000008080007F7F7FFF000000FF7F7F7FFF00808000000000FF000000FF0000
+          00FF7F7F7FFF7F7F7FFF000000FF008080000080800000808000008080000080
+          800000808000000000FF7F7F7FFF000000FF000000FF000000FFBFBFBFFFBFBF
+          BFFF7F7F7FFF000000FF000000FF7F7F7FFF0080800000808000008080000080
+          8000008080007F7F7FFF000000FF000000FF7F7F7FFF7F7F7FFF7F7F7FFF0000
+          00FF000000FF000000FF7F7F7FFF000000FF0080800000808000008080000080
+          80000080800000808000000000FF7F7F7FFF7F7F7FFF000000FF7F7F7FFF0000
+          00FF008080007F7F7FFF000000FF7F7F7FFF0080800000808000008080000080
+          8000000000FF000000FF000000FFBFBFBFFF000000FF7F7F7FFF000000FF0000
+          00FF008080000080800000808000008080000080800000808000008080000080
+          8000000000FF7F7F7FFF7F7F7FFFBFBFBFFF000000FFBFBFBFFF008080000080
+          800000808000000000FF000000FF000000FF0080800000808000008080000080
+          8000000000FF000000FF000000FFBFBFBFFF000000FF7F7F7FFF000000FF7F7F
+          7FFF00808000000000FF7F7F7FFF000000FF008080007F7F7FFF000000FF7F7F
+          7FFF0080800000808000000000FF7F7F7FFFBFBFBFFF000000FF7F7F7FFF0000
+          00FF000000FF000000FF7F7F7FFF000000FF000000FF000000FF7F7F7FFF0000
+          00FF008080007F7F7FFF000000FF000000FF7F7F7FFFBFBFBFFF000000FF0000
+          00FF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF000000FF000000FF7F7F
+          7FFF00808000000000FF7F7F7FFF000000FF000000FF000000FF000000FF7F7F
+          7FFF7F7F7FFF000000FF000000FF000000FF7F7F7FFF7F7F7FFF000000FF0080
+          8000008080007F7F7FFF000000FF7F7F7FFF00808000000000FF000000FFBFBF
+          BFFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF000000FF7F7F7FFF000000FF0000
+          00FF000000FF00808000008080000080800000808000000000FF7F7F7FFFBFBF
+          BFFF000000FFBFBFBFFF000000FF7F7F7FFF000000FF7F7F7FFF7F7F7FFF7F7F
+          7FFF000000FF0080800000808000008080000080800000808000000000FFBFBF
+          BFFF000000FF7F7F7FFFBFBFBFFF7F7F7FFF000000FF7F7F7FFF000000FF0000
+          00FF000000FF0080800000808000008080000080800000808000000000FF7F7F
+          7FFFBFBFBFFF000000FF000000FF000000FF7F7F7FFF7F7F7FFF000000FF0080
+          8000008080000080800000808000008080000080800000808000
+        }
+      end
+      object MenuItem15: TMenuItem
+        Action = WebsiteDeploy1
+        Bitmap.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000800080008000
+          8000800080008000800080008000800080008000800080008000800080008000
+          8000800080008000800080008000800080008000800080008000800080008000
+          8000800080008000800080008000800000FF800000FFFF0000FF800000FFFF00
+          00FF800080008000800080008000800080008000800080008000800080008000
+          800080008000800000FFFF0000FF800000FF800000FF800000FFFF0000FF8000
+          00FF800000FF800000FF80008000800080008000800080008000800080008000
+          8000800000FFFF0000FF800000FF008080FF008080FF800000FF800000FF8000
+          00FF800000FF800000FF800000FF800080008000800080008000800080008000
+          00FFFF0000FF800000FFFF0000FF008080FF008080FF800000FFFF0000FF8000
+          00FFFF0000FF800000FF008080FF008080FF8000800080008000800080008000
+          00FFFF0000FFFF0000FFFF0000FF008080FF008080FF008080FF800000FF8000
+          00FF800000FF800000FF008080FF008080FF8000800080008000FF0000FFFF00
+          00FFFF0000FFFF0000FFFF0000FF008080FF008080FF008080FFFF0000FFFF00
+          00FFFF0000FF800000FFFF0000FF800000FF800000FF80008000800000FFFF00
+          00FFFF0000FF008080FF008080FF008080FF008080FF008080FFFF0000FFFF00
+          00FFFF0000FF800000FF800000FF800000FFFF0000FF80008000FF0000FF8000
+          00FF008080FF008080FF008080FF008080FF008080FF008080FFFF0000FF0080
+          80FFFF0000FF800000FFFF0000FFFF0000FFFF0000FF80008000800000FFFF00
+          00FFFF0000FF008080FF008080FF008080FF008080FF008080FF008080FF0080
+          80FF008080FFFF0000FF800000FFFF0000FF800000FF80008000FF0000FFFF00
+          00FFFF0000FF008080FF008080FFFF0000FFFF0000FF800000FF008080FF0080
+          80FF008080FFFF0000FFFF0000FF800000FFFF0000FF8000800080008000FF00
+          00FFFF0000FFFF0000FFFF0000FFFF0000FF008080FF008080FF008080FF0080
+          80FF008080FF008080FF800000FFFF0000FF8000800080008000800080008000
+          00FFFF0000FF008080FF008080FF008080FF008080FF008080FF008080FF0080
+          80FF008080FF008080FFFF0000FFFF0000FF8000800080008000800080008000
+          8000008080FF008080FF008080FF008080FFFF0000FFFF0000FF008080FFFF00
+          00FF008080FF008080FFFF0000FF800080008000800080008000800080008000
+          800080008000008080FF008080FFFF0000FFFF0000FF800000FFFF0000FF8000
+          00FFFF0000FFFF0000FF80008000800080008000800080008000800080008000
+          8000800080008000800080008000FF0000FF800000FFFF0000FFFF0000FFFF00
+          00FF800080008000800080008000800080008000800080008000
+        }
+      end
+    end
+    object MenuItem13: TMenuItem
+      Caption = 'Help'
+      object MenuItem16: TMenuItem
+        Action = HelpAbout1
+      end
+    end
+  end
+  object ImageList1: TImageList
+    left = 40
+    top = 144
+    Bitmap = {
+      4C6916000000100000001000000000FFFFFF0080800000808000008080000080
+      8000008080000080800000FFFFFF008080000080800000808000008080000080
+      8000008080000080800000FFFFFF0080800000FFFFFF00FFFFFF008080000080
+      8000008080000080800000FFFFFF00FFFFFF0080800000808000008080000080
+      800000FFFFFF00FFFFFF00808000008080000080800000FFFFFF000000FF0000
+      00FF000000FF000000FF000000FF000000FF00808000008080000080800000FF
+      FFFF00FFFFFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF0080800000FFFFFF00FF
+      FFFF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFF000000FF00FFFFFF0080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000FF0080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF000000FF000000FF0000
+      00FF0080800000808000008080000080800000FFFFFF00FFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF00FFFFFF00FFFFFF00808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000FFFFFF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF00FFFFFF00808000008080000080800000FFFFFF00FFFFFF008080007F7F
+      7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF00FFFFFF00FFFFFF00808000008080000080800000808000008080000080
+      800000808000008080000080800000FFFFFF0080800000808000008080000080
+      8000008080000080800000FFFFFF7F7F7FFF0080800000808000008080000080
+      800000808000008080007F7F7FFF008080000080800000808000008080000080
+      800000808000008080007F7F7FFF008080007F7F7FFF7F7F7FFF008080000080
+      800000808000008080007F7F7FFF7F7F7FFF0080800000808000008080000080
+      80007F7F7FFF7F7F7FFF0080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080007F7F
+      7FFF7F7F7FFFFFFFFFFFFFFFFFFF0080800000808000008080007F7F7FFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F
+      7FFFFFFFFFFFFFFFFFFF008080000080800000808000008080007F7F7FFFFFFF
+      FFFF0080800000808000008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFFFFFF
+      FFFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF0080800000808000008080007F7F7FFFFFFFFFFF008080007F7F7FFFFFFF
+      FFFF0080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF0080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFF00808000008080000080800000808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFFFFFF7F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFFFFFFFFFFFFFFFFFF0080800000808000008080007F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFF008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF0080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080000080800000808000FFFFFFFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFFFFFFFFFF00808000008080000080
+      800000808000FFFFFFFF7F7F7FFF00FFFFFF0080800000808000008080000080
+      8000008080000080800000FFFFFF008080000080800000808000008080000080
+      8000008080000080800000FFFFFF0080800000FFFFFF00FFFFFF008080000080
+      8000008080000080800000FFFFFF00FFFFFF0080800000808000008080000080
+      800000FFFFFF00FFFFFF00808000008080000080800000FFFFFF000000FF0000
+      00FF000000FF000000FF000000FF000000FF00808000008080000080800000FF
+      FFFF00FFFFFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF0080800000FFFFFF00FF
+      FFFF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFF000000FF00FFFFFF0080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000FF0080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF000000FF000000FF0000
+      00FF0080800000808000008080000080800000FFFFFF00FFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF00FFFFFF00FFFFFF00808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF7F7F7FFF0080800000808000008080000080800000FFFFFF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF00FFFFFF00808000008080000080800000FFFFFF00FFFFFF008080007F7F
+      7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF00FFFFFF00FFFFFF00808000008080000080800000808000008080000080
+      800000808000008080000080800000FFFFFF0080800000808000008080000080
+      8000008080000080800000FFFFFF7F7F7FFF0080800000808000008080000080
+      800000808000008080007F7F7FFF008080000080800000808000008080000080
+      800000808000008080007F7F7FFF008080007F7F7FFF7F7F7FFF008080000080
+      800000808000008080007F7F7FFF7F7F7FFF0080800000808000008080000080
+      80007F7F7FFF7F7F7FFF0080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080007F7F
+      7FFF7F7F7FFFFFFFFFFFFFFFFFFF0080800000808000008080007F7F7FFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F
+      7FFFFFFFFFFFFFFFFFFF008080000080800000808000008080007F7F7FFFFFFF
+      FFFF0080800000808000008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFFFFFF
+      FFFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF0080800000808000008080007F7F7FFFFFFFFFFF008080007F7F7FFFFFFF
+      FFFF0080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF0080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFF00808000008080000080800000808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFFFFFF7F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFFFFFFFFFFFFFFFFFF0080800000808000008080007F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF008080000080800000808000008080000080800000808000008080007F7F
+      7FFFFFFFFFFF008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF0080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080000080800000808000FFFFFFFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFFFFFFFFFF00808000008080000080
+      800000808000FFFFFFFF7F7F7FFF000000FF000000FF000000FF000000FF0000
+      00FF000000FF0080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FF000000FF008080000000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF008080000080800000808000000000FFFFFFFFFF000000FFBFBFBFFFFFFF
+      FFFF000000FFFFFFFFFF000000FF00808000008080007F7F7FFF0000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FFFFFFFFFFFFFFFFFF000000FF00808000008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFF000000FF000000FFFFFF
+      FFFF000000FF000000FF000000FF000000FF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000FFFF000000FFFFFFFFFF000000FF000000FF0000
+      00FF000000FFFFFFFFFF000000FFFFFFFFFF000000FF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF00808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFF000000FF000000FFFFFF
+      FFFF000000FF000000FFBFBFBFFF000000FFFF0000FFFF0000FFFF0000FF0000
+      FFFFFF0000FFFF0000FF000000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF008080000080800000808000008080000080
+      8000008080000080800000808000000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF008080000080800000808000008080000080
+      8000008080000080800000808000000000FF000000FFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFF000000FF000000FF008080000080800000808000008080000080
+      8000008080000080800000808000000000FF000000FFBFBFBFFF000000FFBFBF
+      BFFFBFBFBFFF000000FF000000FF008080000080800000808000008080000080
+      8000008080000080800000808000000000FF000000FF7F7F7FFF000000FF7F7F
+      7FFF7F7F7FFF000000FF000000FF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF0080800000808000008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF0080800000808000008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFFFFFFFFFF7F7F7FFF00808000FFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF7F7F7FFFFFFFFFFF008080007F7F7FFF00808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF008080007F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF00808000FFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      80000080800000808000008080007F7F7FFFFFFFFFFF00808000008080000080
+      800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF00808000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF0080
+      8000008080007F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      8000008080000080800000808000000000FF000000FF000000FF000000FF0000
+      00FF000000FF0080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FFFFFFFFFF000000FF00808000008080000080800000808000FF0000FFFF00
+      00FFFF0000FF0080800000808000000000FFFFFFFFFF000000FFFFFFFFFF0000
+      00FFFFFFFFFFFFFFFFFF000000FF0080800000808000FF0000FF000000FF0000
+      00FF000000FF0080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF000000FF000000FF000000FF0080800000808000FF0000FF000000FF0080
+      8000FF0000FF000000FF00808000000000FFFFFFFFFF000000FFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF0080800000808000FF0000FF000000FF0080
+      8000FF0000FF000000FF00808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF008080000080800000808000FF0000FF0000
+      00FFFF0000FF000000FF00808000000000FFFFFFFFFF000000FF000000FFFFFF
+      FFFF000000FFFFFFFFFF000000FF008080000080800000808000008080000080
+      8000000000FF000000FF00808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF00808000FF0000FFFF0000FFFF0000FFFF00
+      00FFFF0000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FFFF0000FFFF0000FF000000FF000000FF0000
+      00FF000000FF000000FFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF000000FFFF0000FF000000FF0080800000808000FF00
+      00FF000000FF00808000000000FF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FFFF0000FF000000FFFF0000FFFF0000FF0000
+      00FF008080000080800000808000000000FF7F7F7FFF7F7F7FFF000000FF0000
+      00FF000000FF000000FF000000FF00808000FF0000FF000000FF000000FF0080
+      800000808000008080000080800000808000000000FF7F7F7FFF7F7F7FFF0080
+      8000008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080000080800000808000000000FF7F7F7FFF7F7F
+      7FFF008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000000000FF0000
+      00FF008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF0080800000808000008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFFFFFFFFFF7F7F7FFF008080000080800000808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFFFFFFFFFF7F7F7FFF008080007F7F
+      7FFFFFFFFFFF008080007F7F7FFF00808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF00808000FFFFFFFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF00808000008080007F7F7FFF7F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080007F7F7FFFFFFFFFFF7F7F7FFF008080000080
+      8000FFFFFFFFFFFFFFFF7F7F7FFF00808000008080007F7F7FFF7F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF00808000FFFFFFFF0080
+      800000808000008080007F7F7FFF0080800000808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF008080007F7F7FFF00808000008080000080800000808000FFFF
+      FFFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF00808000FFFFFFFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F
+      7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFFFFFFFFFFFFFFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFFFFFFFFFF0080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF0080800000808000FFFFFFFFFFFFFFFFFFFF
+      FFFF00808000008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF008080000080800000808000008080000080800000808000008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFF7F7F
+      7FFFFFFFFFFF0080800000808000008080000080800000808000008080000080
+      800000808000008080000080800000808000008080000080800000808000FFFF
+      FFFFFFFFFFFF0080800000808000000000FF000000FF000000FF000000FF0000
+      00FF000000FF0080800000808000008080000080800000808000008080000080
+      8000008080000080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FF000000FF008080000000FFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF008080000080800000808000000000FFFFFFFFFF000000FFBFBFBFFFFFFF
+      FFFF000000FFFFFFFFFF000000FF00808000008080007F7F7FFF0000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF000000FFFFFFFFFFFFFFFFFF000000FF00808000008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFF000000FF000000FFFFFF
+      FFFF000000FF000000FF000000FF000000FF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000FFFF000000FFFFFFFFFF000000FF000000FF0000
+      00FF000000FFFFFFFFFF000000FFFFFFFFFF000000FF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF00808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FFFFFFFFFF000000FF000000FFFFFF
+      FFFF000000FF000000FF000000FFFFFFFFFF000000FF000000FF000000FF0000
+      FFFF000000FF000000FF7F7F7FFF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF000000FF7F7F
+      7FFF00FFFFFF00FFFFFF000000FF000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF000000FF7F7F
+      7FFF7F7F7FFF00FFFFFF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF7F7F7FFF7F7F7FFF0000
+      00FF000000FF7F7F7FFF000000FF008080000080800000808000008080000080
+      800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF00FFFFFF000000FF008080000080800000808000008080000080
+      800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF00FFFFFF000000FF008080000080800000808000008080000080
+      800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF00FFFFFF000000FF008080000080800000808000008080000080
+      800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF00FFFFFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF0080800000808000008080000080800000808000008080000080
+      80000080800000808000008080007F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF0080800000808000008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFFFFFFFFFF7F7F7FFF00808000FFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF7F7F7FFFFFFFFFFF008080007F7F7FFF00808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF008080007F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF00808000FFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFFFFFF
+      FFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080000080800000808000008080007F7F7FFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF00808000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      8000008080007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080007F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      8000008080007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080007F7F7FFF7F7F7FFF008080000080800000808000008080000080
+      8000008080007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080007F7F7FFF7F7F7FFF7F7F7FFF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF7F7F7FFF00808000008080000080
+      8000008080000080800000808000000000FF00FFFFFF00FFFFFF7F7F7FFF0000
+      00FF000000FF7F7F7FFF00FFFFFF00FFFFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF008080000080800000808000000000FF00FFFFFF7F7F7FFF7F7F7FFF0000
+      00FF000000FF7F7F7FFF7F7F7FFF00FFFFFF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FF7F7F7FFF000000FF000000FF7F7F
+      7FFF7F7F7FFF000000FF000000FF7F7F7FFF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFF0000FFFF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF0000FFFF000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFF000000FF0000FFFF0000FFFF0000
+      FFFF0000FFFF0000FFFF00808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFF000000FF008080000000FFFF0000
+      FFFF0000FFFF0080800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFF000000FF000000FF000000FF0000
+      FFFF008080000080800000808000000000FF00FFFFFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFF000000FFFFFFFFFF000000FF0000
+      00FF008080000080800000808000000000FF00FFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF00FFFFFF00FFFFFF000000FFFFFFFFFF000000FFFFFF
+      FFFF000000FF0080800000808000000000FF00FFFFFF00FFFFFF00FFFFFF00FF
+      FFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF000000FFFFFF
+      FFFFFFFFFFFF000000FF008080007F7F7FFF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF7F7F7FFFFFFFFFFF000000FF0000
+      00FF000000FF000000FF000000FF008080000080800000808000008080000080
+      800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF008080000080800000808000008080000080
+      800000808000000000FFFFFFFFFF000000FF000000FF000000FF000000FFFFFF
+      FFFF000000FFFFFFFFFF000000FF008080000080800000808000008080000080
+      800000808000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF000000FF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF0080800000808000008080000080
+      80000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF0080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFFFFFFFFFFFFFFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F
+      7FFFFFFFFFFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFF
+      FFFF7F7F7FFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFF
+      FFFF008080007F7F7FFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF0080800000808000FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFF0080800000808000FFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF008080000080800000808000008080000080
+      8000008080007F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF008080007F7F7FFF008080000080800000808000008080000080
+      8000008080007F7F7FFFFFFFFFFF00808000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFF00808000FFFFFFFF7F7F7FFF000000FF7F7F7FFFBFBFBFFF000000FF0000
+      00FF000000FF7F7F7FFF7F7F7FFF000000FF0080800000808000008080000080
+      8000008080000080800000808000000000FFBFBFBFFF000000FF7F7F7FFFBFBF
+      BFFF7F7F7FFF000000FF7F7F7FFF000000FF000000FF000000FF008080000080
+      80000080800000808000008080007F7F7FFFBFBFBFFF000000FFBFBFBFFF0000
+      00FF7F7F7FFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF000000FF008080000080
+      8000008080000080800000808000000000FFBFBFBFFF000000FF7F7F7FFF7F7F
+      7FFF7F7F7FFF000000FF7F7F7FFF000000FF000000FF000000FF008080000080
+      80000080800000808000000000FF000000FF7F7F7FFF7F7F7FFF000000FF0000
+      00FF000000FF7F7F7FFF7F7F7FFF000000FF00808000008080007F7F7FFF0000
+      00FF7F7F7FFF00808000000000FF000000FF000000FF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF000000FF000000FF7F7F7FFF00808000000000FF7F7F
+      7FFF000000FF000000FF000000FF7F7F7FFF000000FF000000FF000000FF7F7F
+      7FFF000000FF000000FF000000FF7F7F7FFF000000FF008080007F7F7FFF0000
+      00FF000000FF7F7F7FFFBFBFBFFF000000FF7F7F7FFF00808000000000FF7F7F
+      7FFF000000FF008080007F7F7FFF000000FF7F7F7FFF00808000008080000000
+      00FF7F7F7FFFBFBFBFFF000000FF008080000080800000808000000000FF0000
+      00FF000000FF00808000008080000080800000808000000000FF000000FF0000
+      00FFBFBFBFFF000000FF7F7F7FFF000000FF000000FF00808000008080000080
+      80000080800000808000008080000080800000808000000000FF7F7F7FFF7F7F
+      7FFFBFBFBFFF000000FFBFBFBFFF7F7F7FFF000000FF008080007F7F7FFF0000
+      00FF7F7F7FFF00808000008080000080800000808000000000FF000000FF0000
+      00FFBFBFBFFF000000FF7F7F7FFF7F7F7FFF000000FF000000FF000000FF7F7F
+      7FFF000000FF0080800000808000008080000080800000808000008080000000
+      00FF7F7F7FFF7F7F7FFF000000FFBFBFBFFFBFBFBFFF7F7F7FFF000000FF0000
+      00FF7F7F7FFF00808000008080000080800000808000008080007F7F7FFF0000
+      00FF000000FF7F7F7FFF7F7F7FFF000000FF000000FF7F7F7FFF7F7F7FFF0000
+      00FF008080000080800000808000008080000080800000808000000000FF7F7F
+      7FFF000000FF000000FF000000FFBFBFBFFF7F7F7FFF000000FF7F7F7FFF0000
+      00FF000000FF000000FF008080000080800000808000008080007F7F7FFF0000
+      00FF7F7F7FFF00808000000000FF008080007F7F7FFF000000FF7F7F7FFF7F7F
+      7FFF7F7F7FFF000000FF00808000008080000080800000808000008080000080
+      80000080800000808000000000FF7F7F7FFF00808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFF0080800000808000008080000080
+      80000080800000808000008080007F7F7FFFFFFFFFFF7F7F7FFF00808000FFFF
+      FFFFFFFFFFFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF008080000080
+      800000808000008080000080800000808000FFFFFFFF7F7F7FFFFFFFFFFF7F7F
+      7FFF008080007F7F7FFFFFFFFFFF00808000FFFFFFFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF008080007F7F7FFFFFFFFFFF0080
+      8000FFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      800000808000008080007F7F7FFF7F7F7FFFFFFFFFFF008080007F7F7FFF7F7F
+      7FFF7F7F7FFF00808000FFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF0080800000808000FFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF008080007F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF00808000008080007F7F
+      7FFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFF00808000FFFFFFFF7F7F7FFFFFFF
+      FFFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFF00808000FFFFFFFF008080007F7F
+      7FFFFFFFFFFFFFFFFFFF7F7F7FFF00808000FFFFFFFF008080007F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF0080800000808000FFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFFFFFFFFFF7F7F7FFF008080007F7F7FFF7F7F7FFF0080800000808000FFFF
+      FFFFFFFFFFFFFFFFFFFF0080800000808000008080007F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF008080007F7F
+      7FFF00808000008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF008080007F7F7FFFFFFFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF0080800000808000008080000080800000808000FFFFFFFF7F7F
+      7FFFFFFFFFFF008080007F7F7FFF0080800000808000FFFFFFFF7F7F7FFF7F7F
+      7FFF00808000FFFFFFFF00808000008080000080800000808000008080007F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFF7F7F7FFF00808000008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF00808000FFFFFFFF7F7F7FFF008080007F7F
+      7FFF7F7F7FFF7F7F7FFF00808000008080000080800000808000008080007F7F
+      7FFF00808000FFFFFFFF7F7F7FFF00808000008080007F7F7FFFFFFFFFFF0080
+      8000FFFFFFFF7F7F7FFFFFFFFFFF008080000080800000808000008080000080
+      8000FFFFFFFF008080007F7F7FFF008080000080800000808000000000FF0000
+      00FF000000FF000000FF000000FF000000FF0080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF00808000008080000080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFF000000FFBFBFBFFFFFFFFFFF000000FFFFFFFFFF000000FF008080000080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000FF0080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFF000000FF000000FFFFFFFFFF000000FF000000FF000000FF000000FF0000
+      00FF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFF000000FF000000FF000000FF000000FFFFFFFFFF000000FFFFFFFFFF0000
+      00FF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF008080000080800000808000000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFF000000FF000000FFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+      FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+      FFFF0000FFFFFFFFFFFF000000FF000000FFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFF000000FF000000FFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFF000000FF00808000000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF008080000080800000808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF0080800000808000008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF00808000008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF7F7F7FFF00808000008080007F7F7FFFFFFFFFFF7F7F7FFF008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF00808000FFFFFFFF008080007F7F7FFFFFFFFFFF008080007F7F7FFF0080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF0080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFF00808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00808000FFFFFFFF7F7F
+      7FFFFFFFFFFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      80007F7F7FFF008080007F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000FFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF00808000008080000080
+      8000008080000080800000808000008080000080800000808000008080000080
+      800000808000008080007F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF00808000008080000080800000808000000000FF0000
+      00FF000000FF000000FF000000FF000000FF0080800000808000008080000080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF000000FF00808000008080000080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFF000000FFBFBFBFFFFFFFFFFF000000FFFFFFFFFF000000FF008080000080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFFFFFFFF000000FF0080
+      8000008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFF000000FF000000FFFFFFFFFF000000FF000000FF000000FF000000FF0000
+      00FF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFF000000FF000000FF000000FF000000FFFFFFFFFF000000FFFFFFFFFF0000
+      00FF008080000080800000808000008080000080800000808000000000FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+      00FF008080000080800000808000000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFF000000FF000000FFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+      FFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFF
+      FFFF0000FFFFFFFFFFFF000000FF000000FFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBFBFFFFFFFFFFFBFBF
+      BFFFFFFFFFFFBFBFBFFF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFF000000FF000000FFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBFBFFFBFBF
+      BFFFBFBFBFFFBFBFBFFF000000FF00808000000000FF000000FF000000FF0000
+      00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+      00FF000000FF000000FF008080000080800000808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF0080800000808000008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF00808000008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080007F7F7FFFFFFFFFFF7F7F7FFF008080000080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFF7F7F7FFFFFFFFFFF008080007F7F7FFF0080
+      80000080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF0080800000808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFF00808000FFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFFFFFF
+      FFFF00808000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00808000FFFFFFFF7F7F
+      7FFFFFFFFFFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFFFFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFFFFFFFFFF00808000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000FF7F7F7FFFBFBFBFFF000000FF0000
+      00FF000000FF7F7F7FFF7F7F7FFF000000FF0080800000808000008080000080
+      8000008080000080800000808000000000FFBFBFBFFF000000FF7F7F7FFFBFBF
+      BFFF7F7F7FFF000000FF7F7F7FFF000000FF000000FF000000FF008080000080
+      80000080800000808000008080007F7F7FFFBFBFBFFF000000FFBFBFBFFF0000
+      00FF7F7F7FFF000000FF7F7F7FFF7F7F7FFF7F7F7FFF000000FF008080000080
+      8000008080000080800000808000000000FFBFBFBFFF000000FF7F7F7FFF7F7F
+      7FFF7F7F7FFF000000FF7F7F7FFF000000FF000000FF000000FF008080000080
+      80000080800000808000000000FF000000FF7F7F7FFF7F7F7FFF000000FF0000
+      00FF000000FF7F7F7FFF7F7F7FFF000000FF00808000008080007F7F7FFF0000
+      00FF7F7F7FFF00808000000000FF000000FF000000FF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF000000FF000000FF7F7F7FFF00808000000000FF7F7F
+      7FFF000000FF000000FF000000FF7F7F7FFF000000FF000000FF000000FF7F7F
+      7FFF000000FF000000FF000000FF7F7F7FFF000000FF008080007F7F7FFF0000
+      00FF000000FF7F7F7FFFBFBFBFFF000000FF7F7F7FFF00808000000000FF7F7F
+      7FFF000000FF008080007F7F7FFF000000FF7F7F7FFF00808000008080000000
+      00FF7F7F7FFFBFBFBFFF000000FF008080000080800000808000000000FF0000
+      00FF000000FF00808000008080000080800000808000000000FF000000FF0000
+      00FFBFBFBFFF000000FF7F7F7FFF000000FF000000FF00808000008080000080
+      80000080800000808000008080000080800000808000000000FF7F7F7FFF7F7F
+      7FFFBFBFBFFF000000FFBFBFBFFF7F7F7FFF000000FF008080007F7F7FFF0000
+      00FF7F7F7FFF00808000008080000080800000808000000000FF000000FF0000
+      00FFBFBFBFFF000000FF7F7F7FFF7F7F7FFF000000FF000000FF000000FF7F7F
+      7FFF000000FF0080800000808000008080000080800000808000008080000000
+      00FF7F7F7FFF7F7F7FFF000000FFBFBFBFFFBFBFBFFF7F7F7FFF000000FF0000
+      00FF7F7F7FFF00808000008080000080800000808000008080007F7F7FFF0000
+      00FF000000FF7F7F7FFF7F7F7FFF000000FF000000FF7F7F7FFF7F7F7FFF0000
+      00FF008080000080800000808000008080000080800000808000000000FF7F7F
+      7FFF000000FF000000FF000000FFBFBFBFFF7F7F7FFF000000FF7F7F7FFF0000
+      00FF000000FF000000FF008080000080800000808000008080007F7F7FFF0000
+      00FF7F7F7FFF00808000000000FF008080007F7F7FFF000000FF7F7F7FFF7F7F
+      7FFF7F7F7FFF000000FF00808000008080000080800000808000008080000080
+      80000080800000808000000000FF7F7F7FFF00808000008080007F7F7FFF7F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFF0080800000808000008080000080
+      80000080800000808000008080007F7F7FFFFFFFFFFF7F7F7FFF00808000FFFF
+      FFFFFFFFFFFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF008080000080
+      800000808000008080000080800000808000FFFFFFFF7F7F7FFFFFFFFFFF7F7F
+      7FFF008080007F7F7FFFFFFFFFFF00808000FFFFFFFF7F7F7FFFFFFFFFFF0080
+      80000080800000808000008080007F7F7FFF008080007F7F7FFFFFFFFFFF0080
+      8000FFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF0080
+      800000808000008080007F7F7FFF7F7F7FFFFFFFFFFF008080007F7F7FFF7F7F
+      7FFF7F7F7FFF00808000FFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F
+      7FFF00808000008080007F7F7FFF7F7F7FFF7F7F7FFF0080800000808000FFFF
+      FFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFFFFFFFFFF008080007F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF008080007F7F7FFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFF00808000008080007F7F
+      7FFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFF00808000FFFFFFFF7F7F7FFFFFFF
+      FFFF7F7F7FFFFFFFFFFFFFFFFFFF7F7F7FFF00808000FFFFFFFF008080007F7F
+      7FFFFFFFFFFFFFFFFFFF7F7F7FFF00808000FFFFFFFF008080007F7F7FFF7F7F
+      7FFF7F7F7FFFFFFFFFFF0080800000808000FFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFFFFFFFFFF7F7F7FFF008080007F7F7FFF7F7F7FFF0080800000808000FFFF
+      FFFFFFFFFFFFFFFFFFFF0080800000808000008080007F7F7FFFFFFFFFFFFFFF
+      FFFFFFFFFFFF7F7F7FFFFFFFFFFF008080007F7F7FFFFFFFFFFF008080007F7F
+      7FFF00808000008080000080800000808000008080007F7F7FFF7F7F7FFF7F7F
+      7FFF008080007F7F7FFFFFFFFFFF008080007F7F7FFF7F7F7FFF7F7F7FFF0080
+      80007F7F7FFF0080800000808000008080000080800000808000FFFFFFFF7F7F
+      7FFFFFFFFFFF008080007F7F7FFF0080800000808000FFFFFFFF7F7F7FFF7F7F
+      7FFF00808000FFFFFFFF00808000008080000080800000808000008080007F7F
+      7FFF7F7F7FFF00808000008080007F7F7FFF7F7F7FFF00808000008080007F7F
+      7FFFFFFFFFFF00808000008080000080800000808000008080007F7F7FFF0080
+      80007F7F7FFF7F7F7FFF7F7F7FFF00808000FFFFFFFF7F7F7FFF008080007F7F
+      7FFF7F7F7FFF7F7F7FFF00808000008080000080800000808000008080007F7F
+      7FFF00808000FFFFFFFF7F7F7FFF00808000008080007F7F7FFFFFFFFFFF0080
+      8000FFFFFFFF7F7F7FFFFFFFFFFF008080000080800000808000008080000080
+      8000FFFFFFFF008080007F7F7FFF800080008000800080008000800080008000
+      8000FF0000FF800000FFFF0000FFFF0000FFFF0000FF80008000800080008000
+      8000800080008000800080008000800080008000800080008000008080FF0080
+      80FFFF0000FFFF0000FF800000FFFF0000FF800000FFFF0000FFFF0000FF8000
+      80008000800080008000800080008000800080008000008080FF008080FF0080
+      80FF008080FFFF0000FFFF0000FF008080FFFF0000FF008080FF008080FFFF00
+      00FF80008000800080008000800080008000800000FFFF0000FF008080FF0080
+      80FF008080FF008080FF008080FF008080FF008080FF008080FF008080FFFF00
+      00FFFF0000FF800080008000800080008000FF0000FFFF0000FFFF0000FFFF00
+      00FFFF0000FF008080FF008080FF008080FF008080FF008080FF008080FF8000
+      00FFFF0000FF8000800080008000FF0000FFFF0000FFFF0000FF008080FF0080
+      80FFFF0000FFFF0000FF800000FF008080FF008080FF008080FFFF0000FFFF00
+      00FF800000FFFF0000FF80008000800000FFFF0000FFFF0000FF008080FF0080
+      80FF008080FF008080FF008080FF008080FF008080FF008080FFFF0000FF8000
+      00FFFF0000FF800000FF80008000FF0000FF800000FF008080FF008080FF0080
+      80FF008080FF008080FF008080FFFF0000FF008080FFFF0000FF800000FFFF00
+      00FFFF0000FFFF0000FF80008000800000FFFF0000FFFF0000FF008080FF0080
+      80FF008080FF008080FF008080FFFF0000FFFF0000FFFF0000FF800000FF8000
+      00FF800000FFFF0000FF80008000FF0000FFFF0000FFFF0000FFFF0000FFFF00
+      00FF008080FF008080FF008080FFFF0000FFFF0000FFFF0000FF800000FFFF00
+      00FF800000FF800000FF8000800080008000800000FFFF0000FFFF0000FFFF00
+      00FF008080FF008080FF008080FF800000FF800000FF800000FF800000FF0080
+      80FF008080FF800080008000800080008000800000FFFF0000FF800000FFFF00
+      00FF008080FF008080FF800000FFFF0000FF800000FFFF0000FF800000FF0080
+      80FF008080FF80008000800080008000800080008000800000FFFF0000FF8000
+      00FF008080FF008080FF800000FF800000FF800000FF800000FF800000FF8000
+      00FF800080008000800080008000800080008000800080008000800000FFFF00
+      00FF800000FF800000FF800000FFFF0000FF800000FF800000FF800000FF8000
+      8000800080008000800080008000800080008000800080008000800080008000
+      8000800000FF800000FFFF0000FF800000FFFF0000FF80008000800080008000
+      8000800080008000800080008000800080008000800080008000800080008000
+      8000800080008000800080008000800080008000800080008000800080008000
+      8000800080008000800080008000800080008000800080008000800080008000
+      80007F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF80008000800080008000
+      80008000800080008000800080008000800080008000800080007F7F7FFF7F7F
+      7FFF80008000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7F7F7FFF7F7F7FFF8000
+      800080008000800080008000800080008000800080007F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF80008000800080007F7F7FFF800080007F7F7FFF7F7F7FFF7F7F
+      7FFF800080008000800080008000800080007F7F7FFF800080007F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFF7F7F7FFF8000800080008000800080007F7F7FFFFFFFFFFF80008000FFFF
+      FFFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFF
+      FFFF7F7F7FFFFFFFFFFF800080007F7F7FFF80008000FFFFFFFF7F7F7FFF7F7F
+      7FFF8000800080008000FFFFFFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFFFFFF
+      FFFF800080007F7F7FFF800080007F7F7FFFFFFFFFFF800080007F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF8000
+      8000800080007F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF7F7F7FFF7F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFFFFFFFFFF8000
+      8000800080007F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF800080007F7F7FFF7F7F
+      7FFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF80008000FFFFFFFF800080008000
+      8000800080007F7F7FFFFFFFFFFF7F7F7FFFFFFFFFFF8000800080008000FFFF
+      FFFF7F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF8000800080008000800080008000
+      8000800080007F7F7FFFFFFFFFFF800080007F7F7FFF80008000800080008000
+      80007F7F7FFF7F7F7FFF7F7F7FFFFFFFFFFF8000800080008000800080007F7F
+      7FFF7F7F7FFF80008000FFFFFFFF800080007F7F7FFFFFFFFFFF800080008000
+      80007F7F7FFF7F7F7FFFFFFFFFFFFFFFFFFF8000800080008000800080007F7F
+      7FFF7F7F7FFFFFFFFFFF8000800080008000800080007F7F7FFF800080008000
+      80007F7F7FFF7F7F7FFFFFFFFFFF800080008000800080008000800080007F7F
+      7FFFFFFFFFFFFFFFFFFF800080008000800080008000800080007F7F7FFF7F7F
+      7FFF80008000FFFFFFFFFFFFFFFF80008000800080007F7F7FFF7F7F7FFF8000
+      8000FFFFFFFF800080008000800080008000800080008000800080008000FFFF
+      FFFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7F7FFF80008000FFFFFFFFFFFF
+      FFFF800080008000800080008000800080008000800080008000800080008000
+      800080008000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800080008000
+      8000800080008000800080008000
+    }
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '.ncw'
+    Filter = 'New Customized Website|*.ncw|Any File|*.*'
+    left = 32
+    top = 264
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.ncw'
+    Filter = 'New Customized Website|*.ncw|Any File|*.*'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    left = 32
+    top = 344
+  end
+  object PrinterSetupDialog1: TPrinterSetupDialog
+    left = 288
+    top = 144
+  end
+  object PrintDialog1: TPrintDialog
+    left = 368
+    top = 144
+  end
+end

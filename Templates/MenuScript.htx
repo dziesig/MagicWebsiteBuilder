@@ -1,0 +1,5 @@
+<script type="text/javascript">
+var @~MenuName~@=new menu.dd("@~MenuName~@");
+@~MenuName~@.init("@~MenuName~@","@~MenuName~@,'_hover");
+</script>
+

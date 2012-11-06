@@ -1,0 +1,28 @@
+<table id="TCW-Customization" style="width: 292px; height: 101px;">
+    <tbody>
+        <tr>
+          <td>
+            <div class="TCW_CustomizationLink">
+              Copyright &copy; @~CopyrightYears~@ @~CopyrightBy~@
+            </div>
+          </td>
+        <tr>
+        <tr>
+          <td>
+            <div class="TCW_CustomizationLink">
+              Point2 Customization by<br />
+              Janice M. Ziesig and Donald R. Ziesig<br />
+              <a href="http://www.thecustomizedwebsite.com">www.TheCustomizedWebsite.com</a><br />
+              <br />
+              <br />
+              verified with the following browsers<br />
+              <a href="@~DeployURL~@html/knownissues.html">known issues</a>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- TCW-Customization -->
+<center>
+  <iframe scrolling="no" height="70" frameborder="0" width="950" src="@~DeployURL~@Html/BrowserBar.htm"></iframe>
+</center>

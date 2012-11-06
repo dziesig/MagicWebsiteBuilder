@@ -1,0 +1,12 @@
+<!-- Start of "The Customized Website Menu" -->
+<!-- @~ClientName~@  -->
+<!-- Copyright (c) @~CopyrightYears~@ by The Customized Website -->
+<!-- Most Recent Update:  @~UpdateDate~@ -->
+
+<link rel="stylesheet" href="@~DeployURL~@Stylesheets/@~CSSFileName~@.css" type="text/css" />
+
+<table class="@~MenuName~@_bar">
+  <tr>
+    <td>
+      <ul class="@~MenuName~@" id="@~MenuName~@">
+

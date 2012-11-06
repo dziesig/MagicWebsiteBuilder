@@ -1,0 +1,360 @@
+object MenuCSSFrame: TMenuCSSFrame
+  Left = 0
+  Height = 513
+  Top = 0
+  Width = 770
+  ClientHeight = 513
+  ClientWidth = 770
+  LCLVersion = '1.0.1.3'
+  TabOrder = 0
+  DesignLeft = 587
+  DesignTop = 152
+  object Label1: TLabel
+    Left = 104
+    Height = 14
+    Top = 501
+    Width = 76
+    Anchors = [akLeft, akBottom]
+    Caption = 'MenuCSSFrame'
+    ParentColor = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 192
+    Top = 8
+    Width = 573
+    Caption = 'Main Menu'
+    ClientHeight = 174
+    ClientWidth = 569
+    TabOrder = 0
+    object MainUnselectedSamplePanel: TPanel
+      Left = 8
+      Height = 37
+      Top = 8
+      Width = 270
+      Caption = 'Unselected'
+      Color = clWhite
+      ParentColor = False
+      TabOrder = 0
+    end
+    object MainSelectedSamplePanel: TPanel
+      Left = 286
+      Height = 37
+      Top = 8
+      Width = 270
+      Caption = 'Selected'
+      Color = clBlack
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object GroupBox2: TGroupBox
+      Left = 8
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Unselected Text'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 2
+      inline ColorFrame1: TColorFrame
+        Left = 4
+        Top = -3
+      end
+    end
+    object GroupBox3: TGroupBox
+      Left = 150
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Unselected Background'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 3
+      inline ColorFrame2: TColorFrame
+        Left = 6
+        Top = -3
+      end
+    end
+    object GroupBox4: TGroupBox
+      Left = 286
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Selected Text'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 4
+      inline ColorFrame3: TColorFrame
+        Left = 6
+        Top = -3
+      end
+    end
+    object GroupBox5: TGroupBox
+      Left = 424
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Selected Background'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 5
+      inline ColorFrame4: TColorFrame
+        Left = 4
+        Top = -3
+      end
+    end
+    object MainUnselectedArrowImageCB: TComboBox
+      Left = 9
+      Height = 21
+      Top = 149
+      Width = 269
+      ItemHeight = 13
+      Items.Strings = (
+        ''
+        'Arrow Down Black.gif'
+        'Arrow Down Gray.gif'
+        'Arrow Down White.gif'
+        'Arrow Right Black.gif'
+        'Arrow Right Gray.gif'
+        'Arrow Right White.gif'
+      )
+      TabOrder = 6
+    end
+    object Label2: TLabel
+      Left = 9
+      Height = 14
+      Top = 136
+      Width = 63
+      Caption = 'Arrow Image'
+      ParentColor = False
+    end
+    object MainSelectedArrowImageCB: TComboBox
+      Left = 289
+      Height = 21
+      Top = 149
+      Width = 269
+      ItemHeight = 13
+      Items.Strings = (
+        ''
+        'Arrow Down Black.gif'
+        'Arrow Down Gray.gif'
+        'Arrow Down White.gif'
+        'Arrow Right Black.gif'
+        'Arrow Right Gray.gif'
+        'Arrow Right White.gif'
+      )
+      TabOrder = 7
+    end
+    object Label3: TLabel
+      Left = 292
+      Height = 14
+      Top = 136
+      Width = 63
+      Caption = 'Arrow Image'
+      ParentColor = False
+    end
+  end
+  object GroupBox6: TGroupBox
+    Left = 16
+    Height = 192
+    Top = 208
+    Width = 573
+    Caption = 'Sub-menu'
+    ClientHeight = 174
+    ClientWidth = 569
+    TabOrder = 1
+    object SubUnselectedSamplePanel: TPanel
+      Left = 8
+      Height = 37
+      Top = 8
+      Width = 270
+      Caption = 'Unselected'
+      Color = clWhite
+      ParentColor = False
+      TabOrder = 0
+    end
+    object SubSelectedSamplePanel: TPanel
+      Left = 286
+      Height = 37
+      Top = 8
+      Width = 270
+      Caption = 'Selected'
+      Color = clBlack
+      Font.Color = clWhite
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object GroupBox7: TGroupBox
+      Left = 8
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Unselected Text'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 2
+      inline ColorFrame5: TColorFrame
+        Left = 4
+        Top = -3
+      end
+    end
+    object GroupBox8: TGroupBox
+      Left = 150
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Unselected Background'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 3
+      inline ColorFrame6: TColorFrame
+        Left = 6
+        Top = -3
+      end
+    end
+    object GroupBox9: TGroupBox
+      Left = 286
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Selected Text'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 4
+      inline ColorFrame7: TColorFrame
+        Left = 6
+        Top = -3
+      end
+    end
+    object GroupBox10: TGroupBox
+      Left = 424
+      Height = 73
+      Top = 59
+      Width = 132
+      Caption = 'Selected Background'
+      ClientHeight = 55
+      ClientWidth = 128
+      TabOrder = 5
+      inline ColorFrame8: TColorFrame
+        Left = 4
+        Top = -3
+      end
+    end
+    object SubUnselectedArrowImageCB: TComboBox
+      Left = 9
+      Height = 21
+      Top = 149
+      Width = 269
+      ItemHeight = 13
+      Items.Strings = (
+        ''
+        'Arrow Down Black.gif'
+        'Arrow Down Gray.gif'
+        'Arrow Down White.gif'
+        'Arrow Right Black.gif'
+        'Arrow Right Gray.gif'
+        'Arrow Right White.gif'
+      )
+      TabOrder = 6
+    end
+    object Label4: TLabel
+      Left = 9
+      Height = 14
+      Top = 136
+      Width = 63
+      Caption = 'Arrow Image'
+      ParentColor = False
+    end
+    object SubSelectedArrowImageCB: TComboBox
+      Left = 289
+      Height = 21
+      Top = 149
+      Width = 269
+      ItemHeight = 13
+      Items.Strings = (
+        ''
+        'Arrow Down Black.gif'
+        'Arrow Down Gray.gif'
+        'Arrow Down White.gif'
+        'Arrow Right Black.gif'
+        'Arrow Right Gray.gif'
+        'Arrow Right White.gif'
+      )
+      TabOrder = 7
+    end
+    object Label5: TLabel
+      Left = 292
+      Height = 14
+      Top = 136
+      Width = 63
+      Caption = 'Arrow Image'
+      ParentColor = False
+    end
+  end
+  object GroupBox16: TGroupBox
+    Left = 16
+    Height = 104
+    Top = 392
+    Width = 573
+    Caption = 'Font'
+    ClientHeight = 86
+    ClientWidth = 569
+    TabOrder = 2
+    object TextSizeLabel: TLabel
+      Left = 458
+      Height = 14
+      Top = 63
+      Width = 34
+      Alignment = taCenter
+      Caption = '0.1 em'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 380
+      Height = 14
+      Top = 13
+      Width = 20
+      Caption = 'Size'
+      ParentColor = False
+    end
+    object FontBoldCB: TCheckBox
+      Left = 306
+      Height = 17
+      Top = 32
+      Width = 38
+      Caption = 'Bold'
+      TabOrder = 0
+    end
+    object TextSizeTB: TTrackBar
+      Left = 368
+      Height = 30
+      Top = 27
+      Width = 189
+      Max = 200
+      Min = 1
+      OnChange = TextSizeTBChange
+      Position = 8
+      TabOrder = 1
+    end
+    object FontFacesEdit: TLabeledEdit
+      Left = 12
+      Height = 21
+      Top = 29
+      Width = 257
+      EditLabel.AnchorSideLeft.Control = FontFacesEdit
+      EditLabel.AnchorSideRight.Control = FontFacesEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = FontFacesEdit
+      EditLabel.Left = 12
+      EditLabel.Height = 14
+      EditLabel.Top = 12
+      EditLabel.Width = 37
+      EditLabel.Caption = 'Face(s)'
+      EditLabel.ParentColor = False
+      TabOrder = 2
+    end
+  end
+end

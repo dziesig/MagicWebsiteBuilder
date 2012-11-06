@@ -1,0 +1,59 @@
+object ConfigDebugForm: TConfigDebugForm
+  Left = 452
+  Height = 135
+  Top = 172
+  Width = 685
+  Caption = 'Config Data'
+  ClientHeight = 135
+  ClientWidth = 685
+  OnShow = FormShow
+  LCLVersion = '1.0.1.3'
+  object Label1: TLabel
+    Left = 16
+    Height = 14
+    Top = 24
+    Width = 71
+    Caption = 'Base Directory'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 14
+    Top = 57
+    Width = 75
+    Caption = 'Client Directory'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 14
+    Top = 92
+    Width = 84
+    Caption = 'WebsiteDirectory'
+    ParentColor = False
+  end
+  object BaseDirectoryLabel: TLabel
+    Left = 112
+    Height = 14
+    Top = 24
+    Width = 93
+    Caption = 'BaseDirectoryLabel'
+    ParentColor = False
+  end
+  object ClientDirectoryLabel: TLabel
+    Left = 112
+    Height = 14
+    Top = 57
+    Width = 97
+    Caption = 'ClientDirectoryLabel'
+    ParentColor = False
+  end
+  object WebsiteDirectoryLabel: TLabel
+    Left = 112
+    Height = 14
+    Top = 92
+    Width = 109
+    Caption = 'WebsiteDirectoryLabel'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="@~DeployURL~@Stylesheets/TheCustomizedWebsite.css" type="text/css">
+  </head>
+  <body>
+    <!-- TCW Browser Bar -->
+	<table id="TCW-browser-bar" width="100%" >
+		<tbody>
+			<tr>
+				<td>
+				  <a href="http://www.google.com/chrome"><img class="chrome" border="0" alt="" src="http://www.customizewebsite.com/images/bigchromelogo-1.gif" /></a> 
+				  <a href="http://www.mozilla.com/en-US/?from=sfx&amp;uid=0&amp;t=438"><img class="firefox" border="0" alt="Spread Firefox Affiliate Button" src="http://www.customizewebsite.com/images/firefoxlogo.png" /></a> 
+				  <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx"><img class="ie_8_1" alt="" src="http://www.customizewebsite.com/images/ie8_logo.png" /> </a>
+				  <a href="http://www.opera.com/"><img class="opera" alt="" src="http://www.customizewebsite.com/images/Opera-logo-PNG.png" /> </a>
+				  <a href="http://www.apple.com/safari/"><img class="safari" alt="" src="http://www.customizewebsite.com/images/safarilogo.png" /> </a>
+				</td>
+			</tr>
+		</tbody>
+	</table> <!-- TCW-browser-bar -->
+  </body>
+</html>

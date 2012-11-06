@@ -1,0 +1,260 @@
+object MenusFrame: TMenusFrame
+  Left = 0
+  Height = 576
+  Top = 0
+  Width = 886
+  ClientHeight = 576
+  ClientWidth = 886
+  LCLVersion = '1.0.1.3'
+  TabOrder = 0
+  DesignLeft = 392
+  DesignTop = 135
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 558
+    Top = 0
+    Width = 886
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    OnChange = PageControl1Change
+    OnChanging = PageControl1Changing
+    object TabSheet1: TTabSheet
+      Caption = 'Item'
+      ClientHeight = 527
+      ClientWidth = 882
+      object Button1: TButton
+        Left = 284
+        Height = 25
+        Top = 474
+        Width = 75
+        Caption = 'Dump Menu'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      inline MenuItemFrame1: TMenuItemFrame
+        Height = 527
+        Width = 882
+        Align = alClient
+        ClientHeight = 527
+        ClientWidth = 882
+        PopupMenu = MenuItemFrame1.PopupMenu1
+        TabOrder = 1
+        inherited TreeView1: TTreeView
+          Height = 482
+          ShowLines = True
+          ShowRoot = True
+        end
+        inherited GroupBox1: TGroupBox
+          inherited GroupBox2: TGroupBox
+            inherited ColorFrame1: TColorFrame
+              Left = 22
+              Top = 64
+              Width = 113
+              ClientWidth = 113
+              TabOrder = 4
+              inherited ColorEdit: TLabeledEdit
+                Height = 27
+                EditLabel.Height = 18
+                EditLabel.Top = 0
+                EditLabel.Width = 64
+              end
+            end
+          end
+          inherited GroupBox3: TGroupBox
+            inherited ColorFrame2: TColorFrame
+              Left = 13
+              Top = 63
+              Width = 113
+              ClientWidth = 113
+              TabOrder = 4
+              inherited ColorEdit: TLabeledEdit
+                Height = 27
+                EditLabel.Height = 18
+                EditLabel.Top = 0
+                EditLabel.Width = 64
+              end
+            end
+          end
+        end
+        inherited Label1: TLabel
+          Top = 506
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'General CSS'
+      ClientHeight = 527
+      ClientWidth = 882
+      inline GeneralCSSFrame1: TGeneralCSSFrame
+        Height = 532
+        Width = 878
+        Align = alClient
+        ClientHeight = 532
+        ClientWidth = 878
+        DesignLeft = 782
+        DesignTop = 154
+        inherited Label1: TLabel
+          Top = 515
+        end
+        inherited GroupBox1: TGroupBox
+          inherited GroupBox2: TGroupBox
+            inherited ColorFrame1: TColorFrame
+              Left = -2
+              Height = 49
+              Width = 105
+              ClientHeight = 49
+              ClientWidth = 105
+              DesignLeft = 506
+              DesignTop = 137
+              inherited ColorDialog1: TColorDialog
+                left = 114
+              end
+            end
+          end
+          inherited GroupBox3: TGroupBox
+            inherited ColorFrame2: TColorFrame
+              Left = -2
+              Height = 49
+              Width = 109
+              ClientHeight = 49
+              ClientWidth = 109
+              DesignLeft = 506
+              DesignTop = 137
+              inherited ColorEdit: TLabeledEdit
+                Left = 4
+                Top = 18
+                EditLabel.Left = 4
+                EditLabel.Top = 1
+              end
+              inherited ColorDialog1: TColorDialog
+                left = 114
+              end
+            end
+          end
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Menu CSS'
+      ClientHeight = 527
+      ClientWidth = 882
+      inline MenuCSSFrame1: TMenuCSSFrame
+        Height = 532
+        Width = 878
+        Align = alClient
+        ClientHeight = 532
+        ClientWidth = 878
+        DesignLeft = 841
+        DesignTop = 146
+        inherited Label1: TLabel
+          Top = 520
+        end
+        inherited GroupBox1: TGroupBox
+          inherited GroupBox2: TGroupBox
+            inherited ColorFrame1: TColorFrame
+              Left = 4
+              Top = -3
+            end
+          end
+          inherited GroupBox3: TGroupBox
+            inherited ColorFrame2: TColorFrame
+              Left = 6
+              Top = -3
+            end
+          end
+          inherited GroupBox4: TGroupBox
+            inherited ColorFrame3: TColorFrame
+              Left = 6
+              Top = -3
+            end
+          end
+          inherited GroupBox5: TGroupBox
+            inherited ColorFrame4: TColorFrame
+              Left = 4
+              Top = -3
+            end
+          end
+        end
+        inherited GroupBox6: TGroupBox
+          inherited GroupBox7: TGroupBox
+            inherited ColorFrame5: TColorFrame
+              Left = 4
+              Top = -3
+            end
+          end
+          inherited GroupBox8: TGroupBox
+            inherited ColorFrame6: TColorFrame
+              Left = 6
+              Top = -3
+            end
+          end
+          inherited GroupBox9: TGroupBox
+            inherited ColorFrame7: TColorFrame
+              Left = 6
+              Top = -3
+            end
+          end
+          inherited GroupBox10: TGroupBox
+            inherited ColorFrame8: TColorFrame
+              Left = 4
+              Top = -3
+            end
+          end
+        end
+        inherited GroupBox16: TGroupBox
+          inherited TextSizeLabel: TLabel
+            Width = 19
+            Caption = '7px'
+          end
+          inherited TextSizeTB: TTrackBar
+            Max = 28
+            Min = 8
+            OnChange = nil
+          end
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'IDX Header/Footer'
+      ClientHeight = 527
+      ClientWidth = 882
+      inline IDXHdrFtrFrame1: TIDXHdrFtrFrame
+        Height = 532
+        Width = 878
+        Align = alClient
+        ClientHeight = 532
+        ClientWidth = 878
+        inherited Label1: TLabel
+          Top = 517
+        end
+        inherited GroupBox1: TGroupBox
+          inherited GroupBox2: TGroupBox
+            inherited GroupBox4: TGroupBox
+              inherited ColorFrame1: TColorFrame
+                Left = -2
+              end
+            end
+          end
+          inherited GroupBox3: TGroupBox
+            inherited GroupBox5: TGroupBox
+              inherited ColorFrame2: TColorFrame
+                Left = -2
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 18
+    Top = 558
+    Width = 886
+    Align = alBottom
+    Caption = 'MenusFrame'
+    TabOrder = 1
+  end
+end

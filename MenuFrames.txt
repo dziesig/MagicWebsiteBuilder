@@ -1,0 +1,8 @@
+MenuSelectFrame
+    PrimaryMenu =>   MenusFrame
+        MenusFrame
+            Item =>              MenuItemFrame
+            General CSS =>       GeneralCSSFrame
+            Menu CSS =>          MenuCSSFrame
+            IDX Header/Footer => IDXHdrFtrFrame
+    SecondaryMenu => MenusFrame

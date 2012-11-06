@@ -1,0 +1,107 @@
+object TCWItemEditForm: TTCWItemEditForm
+  Left = 46
+  Height = 217
+  Top = 153
+  Width = 358
+  Caption = 'Add Menu Item'
+  ClientHeight = 217
+  ClientWidth = 358
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  LCLVersion = '0.9.30.4'
+  object LabeledEdit1: TLabeledEdit
+    Left = 24
+    Height = 21
+    Top = 28
+    Width = 313
+    EditLabel.AnchorSideLeft.Control = LabeledEdit1
+    EditLabel.AnchorSideBottom.Control = LabeledEdit1
+    EditLabel.Left = 24
+    EditLabel.Height = 14
+    EditLabel.Top = 11
+    EditLabel.Width = 23
+    EditLabel.Caption = 'Text'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+  end
+  object HostRG: TRadioGroup
+    Left = 24
+    Height = 45
+    Top = 63
+    Width = 313
+    AutoFill = True
+    Caption = 'Host'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 5
+    ClientHeight = 27
+    ClientWidth = 309
+    Columns = 5
+    ItemIndex = 0
+    Items.Strings = (
+      'None'
+      'IDX'
+      'Point2'
+      'Wolfnet'
+      'Z-House'
+    )
+    TabOrder = 1
+  end
+  object URLEdit1: TLabeledEdit
+    Left = 24
+    Height = 21
+    Top = 128
+    Width = 249
+    EditLabel.AnchorSideLeft.Control = URLEdit1
+    EditLabel.AnchorSideBottom.Control = URLEdit1
+    EditLabel.Left = 24
+    EditLabel.Height = 14
+    EditLabel.Top = 111
+    EditLabel.Width = 117
+    EditLabel.Caption = 'Host Specific Partial URL'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+  end
+  object SecondaryPastePartialURLButton: TButton
+    Left = 279
+    Height = 25
+    Top = 126
+    Width = 58
+    Caption = 'Paste'
+    OnClick = SecondaryPastePartialURLButtonClick
+    TabOrder = 3
+  end
+  object CheckBox1: TCheckBox
+    Left = 24
+    Height = 17
+    Top = 168
+    Width = 61
+    Caption = 'Continue'
+    TabOrder = 4
+  end
+  object BitBtn2: TBitBtn
+    Left = 168
+    Height = 25
+    Top = 168
+    Width = 75
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn2Click
+    TabOrder = 5
+  end
+  object BitBtn1: TBitBtn
+    Left = 262
+    Height = 25
+    Top = 168
+    Width = 75
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 6
+  end
+end

@@ -1,0 +1,486 @@
+object MenuItemFrame: TMenuItemFrame
+  Left = 0
+  Height = 613
+  Top = 0
+  Width = 1129
+  ClientHeight = 613
+  ClientWidth = 1129
+  LCLVersion = '1.0.1.3'
+  PopupMenu = PopupMenu1
+  TabOrder = 0
+  DesignLeft = 126
+  DesignTop = 91
+  object TreeView1: TTreeView
+    Left = 8
+    Height = 568
+    Top = 16
+    Width = 257
+    Anchors = [akTop, akLeft, akBottom]
+    DragMode = dmAutomatic
+    HideSelection = False
+    Indent = 19
+    RightClickSelect = True
+    RowSelect = True
+    TabOrder = 0
+    OnChange = TreeView1Change
+    OnChanging = TreeView1Changing
+    OnClick = TreeView1Click
+    OnDragDrop = TreeView1DragDrop
+    OnDragOver = TreeView1DragOver
+    OnEdited = TreeView1Edited
+    OnMouseDown = TreeView1MouseDown
+    Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoRightClickSelect, tvoRowSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+  end
+  object AddButton: TButton
+    Left = 279
+    Height = 25
+    Hint = 'Add Node at end'
+    Top = 16
+    Width = 75
+    Caption = 'Add'
+    OnClick = AddButtonClick
+    OnMouseDown = AddButtonMouseDown
+    TabOrder = 1
+  end
+  object InsertButton: TButton
+    Left = 279
+    Height = 25
+    Hint = 'Insert node before selected node.'
+    Top = 47
+    Width = 75
+    Caption = 'Insert'
+    OnMouseDown = InsertButtonMouseDown
+    TabOrder = 2
+  end
+  object AddChildButton: TButton
+    Left = 279
+    Height = 25
+    Hint = 'Add Child of selected node.'
+    Top = 78
+    Width = 75
+    Caption = 'Add Child'
+    OnMouseDown = AddChildButtonMouseDown
+    TabOrder = 3
+  end
+  object MoveUp1Button: TSpeedButton
+    Left = 279
+    Height = 22
+    Top = 139
+    Width = 23
+    Enabled = False
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333000333
+      3333333333777F33333333333309033333333333337F7F333333333333090333
+      33333333337F7F33333333333309033333333333337F7F333333333333090333
+      33333333337F7F33333333333309033333333333FF7F7FFFF333333000090000
+      3333333777737777F333333099999990333333373F3333373333333309999903
+      333333337F33337F33333333099999033333333373F333733333333330999033
+      3333333337F337F3333333333099903333333333373F37333333333333090333
+      33333333337F7F33333333333309033333333333337373333333333333303333
+      333333333337F333333333333330333333333333333733333333
+    }
+    NumGlyphs = 2
+    OnClick = MoveUp1ButtonClick
+  end
+  object MoveDown1Button: TSpeedButton
+    Left = 279
+    Height = 22
+    Top = 167
+    Width = 23
+    Enabled = False
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333303333
+      333333333337F33333333333333033333333333333373F333333333333090333
+      33333333337F7F33333333333309033333333333337373F33333333330999033
+      3333333337F337F33333333330999033333333333733373F3333333309999903
+      333333337F33337F33333333099999033333333373333373F333333099999990
+      33333337FFFF3FF7F33333300009000033333337777F77773333333333090333
+      33333333337F7F33333333333309033333333333337F7F333333333333090333
+      33333333337F7F33333333333309033333333333337F7F333333333333090333
+      33333333337F7F33333333333300033333333333337773333333
+    }
+    NumGlyphs = 2
+    OnClick = MoveDown1ButtonClick
+  end
+  object ExpandButton: TButton
+    Left = 279
+    Height = 25
+    Top = 209
+    Width = 75
+    Caption = 'Expand'
+    OnClick = ExpandButtonClick
+    TabOrder = 4
+  end
+  object ContractButton: TButton
+    Left = 279
+    Height = 25
+    Top = 240
+    Width = 75
+    Caption = 'Contract'
+    OnClick = ContractButtonClick
+    TabOrder = 5
+  end
+  object DeleteButton: TBitBtn
+    Left = 279
+    Height = 25
+    Hint = 'Delete selected node (and all its children)'
+    Top = 396
+    Width = 75
+    Caption = 'Delete'
+    Kind = bkCancel
+    OnMouseDown = DeleteButtonMouseDown
+    TabOrder = 6
+  end
+  object GroupBox1: TGroupBox
+    Left = 376
+    Height = 432
+    Top = 16
+    Width = 645
+    Caption = 'Menu Item'
+    ClientHeight = 413
+    ClientWidth = 641
+    TabOrder = 7
+    object HostRG: TRadioGroup
+      Left = 12
+      Height = 45
+      Top = 8
+      Width = 318
+      AutoFill = True
+      Caption = 'Host'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.TopBottomSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 5
+      ClientHeight = 26
+      ClientWidth = 314
+      Columns = 5
+      ItemIndex = 0
+      Items.Strings = (
+        'None'
+        'IDX'
+        'Point2'
+        'Wolfnet'
+        'Z-House'
+      )
+      TabOrder = 0
+    end
+    object HostURLEdit: TLabeledEdit
+      Left = 20
+      Height = 27
+      Top = 80
+      Width = 233
+      EditLabel.AnchorSideLeft.Control = HostURLEdit
+      EditLabel.AnchorSideRight.Control = HostURLEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = HostURLEdit
+      EditLabel.Left = 20
+      EditLabel.Height = 18
+      EditLabel.Top = 59
+      EditLabel.Width = 233
+      EditLabel.Caption = 'Host Specific Partial URL'
+      EditLabel.ParentColor = False
+      TabOrder = 1
+    end
+    object GroupBox21: TGroupBox
+      Left = 7
+      Height = 61
+      Top = 126
+      Width = 318
+      Caption = 'IDX Page-specific Title'
+      ClientHeight = 42
+      ClientWidth = 314
+      TabOrder = 2
+      object IDXPageTitleEdit: TEdit
+        Left = 13
+        Height = 27
+        Top = 24
+        Width = 292
+        TabOrder = 0
+        Text = 'IDXPageTitleEdit'
+      end
+    end
+    object AutoPasteCheckBox: TCheckBox
+      Left = 30
+      Height = 24
+      Top = 375
+      Width = 226
+      Anchors = [akLeft, akBottom]
+      Caption = 'AutoPaste (not implemented)'
+      TabOrder = 3
+    end
+    object GroupBox2: TGroupBox
+      Left = 334
+      Height = 198
+      Top = 8
+      Width = 298
+      Caption = 'IDX Header'
+      ClientHeight = 179
+      ClientWidth = 294
+      TabOrder = 4
+      object IDX_HeaderTextEdit: TLabeledEdit
+        Left = 13
+        Height = 27
+        Top = 16
+        Width = 276
+        EditLabel.AnchorSideLeft.Control = IDX_HeaderTextEdit
+        EditLabel.AnchorSideRight.Control = IDX_HeaderTextEdit
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = IDX_HeaderTextEdit
+        EditLabel.Left = 13
+        EditLabel.Height = 18
+        EditLabel.Top = -5
+        EditLabel.Width = 276
+        EditLabel.Caption = 'Text'
+        EditLabel.ParentColor = False
+        TabOrder = 0
+      end
+      object IDX_HeaderSizeEdit: TLabeledEdit
+        Left = 144
+        Height = 27
+        Top = 51
+        Width = 45
+        EditLabel.AnchorSideLeft.Control = IDX_HeaderSizeEdit
+        EditLabel.AnchorSideRight.Control = IDX_HeaderSizeEdit
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = IDX_HeaderSizeEdit
+        EditLabel.Left = 144
+        EditLabel.Height = 18
+        EditLabel.Top = 30
+        EditLabel.Width = 45
+        EditLabel.Caption = 'Size'
+        EditLabel.ParentColor = False
+        TabOrder = 1
+      end
+      object IDX_HeaderFontEdit: TLabeledEdit
+        Left = 146
+        Height = 27
+        Top = 91
+        Width = 143
+        EditLabel.AnchorSideLeft.Control = IDX_HeaderFontEdit
+        EditLabel.AnchorSideRight.Control = IDX_HeaderFontEdit
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = IDX_HeaderFontEdit
+        EditLabel.Left = 146
+        EditLabel.Height = 18
+        EditLabel.Top = 70
+        EditLabel.Width = 143
+        EditLabel.Caption = 'Font'
+        EditLabel.ParentColor = False
+        TabOrder = 2
+      end
+      object IDX_HeaderUseDefaultButton: TButton
+        Left = 118
+        Height = 25
+        Top = 144
+        Width = 89
+        Caption = 'Use Default'
+        OnClick = IDX_HeaderUseDefaultButtonClick
+        TabOrder = 3
+      end
+      inline ColorFrame1: TColorFrame
+        Left = 22
+        Top = 64
+        Width = 113
+        ClientWidth = 113
+        TabOrder = 4
+        inherited ColorEdit: TLabeledEdit
+          Height = 27
+          EditLabel.Height = 18
+          EditLabel.Top = 0
+          EditLabel.Width = 64
+        end
+      end
+    end
+    object GroupBox3: TGroupBox
+      Left = 326
+      Height = 198
+      Top = 207
+      Width = 298
+      Caption = 'IDX Footer'
+      ClientHeight = 179
+      ClientWidth = 294
+      TabOrder = 5
+      object IDX_FooterTextEdit: TLabeledEdit
+        Left = 13
+        Height = 27
+        Top = 15
+        Width = 276
+        EditLabel.AnchorSideLeft.Control = IDX_FooterTextEdit
+        EditLabel.AnchorSideRight.Control = IDX_FooterTextEdit
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = IDX_FooterTextEdit
+        EditLabel.Left = 13
+        EditLabel.Height = 18
+        EditLabel.Top = -6
+        EditLabel.Width = 276
+        EditLabel.Caption = 'Text'
+        EditLabel.ParentColor = False
+        TabOrder = 0
+      end
+      object IDX_FooterSizeEdit: TLabeledEdit
+        Left = 144
+        Height = 27
+        Top = 50
+        Width = 45
+        EditLabel.AnchorSideLeft.Control = IDX_FooterSizeEdit
+        EditLabel.AnchorSideRight.Control = IDX_FooterSizeEdit
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = IDX_FooterSizeEdit
+        EditLabel.Left = 144
+        EditLabel.Height = 18
+        EditLabel.Top = 29
+        EditLabel.Width = 45
+        EditLabel.Caption = 'Size'
+        EditLabel.ParentColor = False
+        TabOrder = 1
+      end
+      object IDX_FooterFontEdit: TLabeledEdit
+        Left = 146
+        Height = 27
+        Top = 90
+        Width = 143
+        EditLabel.AnchorSideLeft.Control = IDX_FooterFontEdit
+        EditLabel.AnchorSideRight.Control = IDX_FooterFontEdit
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = IDX_FooterFontEdit
+        EditLabel.Left = 146
+        EditLabel.Height = 18
+        EditLabel.Top = 69
+        EditLabel.Width = 143
+        EditLabel.Caption = 'Font'
+        EditLabel.ParentColor = False
+        TabOrder = 2
+      end
+      object IDX_FooterUseDefaultButton: TButton
+        Left = 118
+        Height = 25
+        Top = 143
+        Width = 89
+        Caption = 'Use Default'
+        TabOrder = 3
+      end
+      inline ColorFrame2: TColorFrame
+        Left = 13
+        Top = 63
+        Width = 113
+        ClientWidth = 113
+        TabOrder = 4
+        inherited ColorEdit: TLabeledEdit
+          Height = 27
+          EditLabel.Height = 18
+          EditLabel.Top = 0
+          EditLabel.Width = 64
+        end
+      end
+    end
+    object Button1: TButton
+      Left = 230
+      Height = 25
+      Top = 375
+      Width = 75
+      Caption = 'Update'
+      OnClick = Button1Click
+      TabOrder = 6
+    end
+  end
+  object Label1: TLabel
+    Left = 104
+    Height = 18
+    Top = 588
+    Width = 112
+    Anchors = [akLeft, akBottom]
+    Caption = 'MenuItemFrame'
+    ParentColor = False
+  end
+  object ActionList1: TActionList
+    left = 116
+    top = 284
+    object Add2: TAction
+      Caption = 'Add'
+      Hint = 'Add Node at end'
+      OnExecute = Add2Click
+    end
+    object Insert2: TAction
+      Caption = 'Insert'
+      Hint = 'Insert node before selected node.'
+      OnExecute = Insert2Execute
+    end
+    object AddChild2: TAction
+      Caption = 'Add Child'
+      Hint = 'Add Child of selected node.'
+      OnExecute = AddChild2Execute
+    end
+    object Delete2: TAction
+      Caption = 'Delete'
+      Hint = 'Delete selected node (and all its children)'
+      OnExecute = Delete2Execute
+    end
+    object CopyNode2: TAction
+      Caption = 'Copy Node'
+      Hint = 'Copy selected node (and all its children)'
+      OnExecute = CopyNode2Execute
+    end
+    object PasteNode2: TAction
+      Caption = 'Paste Node'
+      Hint = 'Paste copied node (and all its children) after selected node'
+      OnExecute = PasteNode2Execute
+    end
+    object PasteNodeAtRoot2: TAction
+      Caption = 'Paste Node at Root'
+      Hint = 'Paste copied node (and all its chidren) at end of root'
+      OnExecute = PasteNodeAtRoot2Execute
+    end
+    object PasteChildrenOnly2: TAction
+      Caption = 'Paste Children Only'
+      Hint = 'Paste Children of copied node as children of the selected node'
+      OnExecute = PasteChildrenOnly2Execute
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 188
+    top = 92
+    object Add1: TMenuItem
+      Action = Add2
+    end
+    object Insert1: TMenuItem
+      Action = Insert2
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
+    object AddChild1: TMenuItem
+      Action = AddChild2
+    end
+    object N4: TMenuItem
+      Caption = '-'
+    end
+    object Delete1: TMenuItem
+      Action = Delete2
+    end
+    object N8: TMenuItem
+      Caption = '-'
+    end
+    object CopyNode1: TMenuItem
+      Action = CopyNode2
+    end
+    object PasteNode1: TMenuItem
+      Action = PasteNode2
+    end
+    object PasteNodeatRoot1: TMenuItem
+      Action = PasteNodeAtRoot2
+    end
+    object PasteChildrenOnly1: TMenuItem
+      Action = PasteChildrenOnly2
+    end
+  end
+end

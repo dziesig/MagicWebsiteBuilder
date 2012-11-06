@@ -1,0 +1,261 @@
+object IniData: TIniData
+  Left = 159
+  Height = 524
+  Top = 158
+  Width = 638
+  Caption = 'IniData'
+  ClientHeight = 524
+  ClientWidth = 638
+  OnCreate = FormCreate
+  LCLVersion = '1.0.1.3'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 256
+    Top = 200
+    Width = 305
+    Caption = 'Root Directories'
+    ClientHeight = 238
+    ClientWidth = 301
+    TabOrder = 0
+    OnClick = GroupBox1Click
+    object Label1: TLabel
+      Left = 28
+      Height = 14
+      Top = 37
+      Width = 82
+      Caption = 'Root Directory +'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 28
+      Height = 14
+      Top = 92
+      Width = 82
+      Caption = 'Root Directory +'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 28
+      Height = 14
+      Top = 148
+      Width = 82
+      Caption = 'Root Directory +'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 28
+      Height = 14
+      Top = 200
+      Width = 82
+      Caption = 'Root Directory +'
+      ParentColor = False
+    end
+    object WorkDirectoryEdit: TLabeledEdit
+      Left = 160
+      Height = 21
+      Top = 33
+      Width = 121
+      EditLabel.AnchorSideLeft.Control = WorkDirectoryEdit
+      EditLabel.AnchorSideRight.Control = WorkDirectoryEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = WorkDirectoryEdit
+      EditLabel.Left = 160
+      EditLabel.Height = 14
+      EditLabel.Top = 16
+      EditLabel.Width = 121
+      EditLabel.Caption = 'Work Directory'
+      EditLabel.ParentColor = False
+      TabOrder = 0
+      OnChange = WorkDirectoryEditChange
+    end
+    object TestDirectoryEdit: TLabeledEdit
+      Left = 160
+      Height = 21
+      Top = 89
+      Width = 121
+      EditLabel.AnchorSideLeft.Control = TestDirectoryEdit
+      EditLabel.AnchorSideRight.Control = TestDirectoryEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = TestDirectoryEdit
+      EditLabel.Left = 160
+      EditLabel.Height = 14
+      EditLabel.Top = 72
+      EditLabel.Width = 121
+      EditLabel.Caption = 'Test Directory'
+      EditLabel.ParentColor = False
+      TabOrder = 1
+      OnChange = TestDirectoryEditChange
+    end
+    object DeployDirectoryEdit: TLabeledEdit
+      Left = 160
+      Height = 21
+      Top = 145
+      Width = 121
+      EditLabel.AnchorSideLeft.Control = DeployDirectoryEdit
+      EditLabel.AnchorSideRight.Control = DeployDirectoryEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = DeployDirectoryEdit
+      EditLabel.Left = 160
+      EditLabel.Height = 14
+      EditLabel.Top = 128
+      EditLabel.Width = 121
+      EditLabel.Caption = 'Server Directory'
+      EditLabel.ParentColor = False
+      TabOrder = 2
+      OnChange = DeployDirectoryEditChange
+    end
+    object HostDirectoryEdit: TLabeledEdit
+      Left = 160
+      Height = 21
+      Top = 197
+      Width = 121
+      EditLabel.AnchorSideLeft.Control = HostDirectoryEdit
+      EditLabel.AnchorSideRight.Control = HostDirectoryEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = HostDirectoryEdit
+      EditLabel.Left = 160
+      EditLabel.Height = 14
+      EditLabel.Top = 180
+      EditLabel.Width = 121
+      EditLabel.Caption = 'Host Files Directory'
+      EditLabel.ParentColor = False
+      TabOrder = 3
+      OnChange = HostDirectoryEditChange
+    end
+  end
+  object BitBtn1: TBitBtn
+    Left = 128
+    Height = 30
+    Top = 480
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object DoneButton: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 480
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = 'Done'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 176
+    Top = 16
+    Width = 305
+    Caption = 'Default Save Location'
+    ClientHeight = 158
+    ClientWidth = 301
+    TabOrder = 3
+    object DefaultSaveLocationLabel: TLabel
+      Left = 22
+      Height = 24
+      Top = 8
+      Width = 264
+      AutoSize = False
+      Caption = 'DefaultSaveLocationLabel'
+      ParentColor = False
+      WordWrap = True
+    end
+    object Label5: TLabel
+      Left = 142
+      Height = 24
+      Top = 32
+      Width = 17
+      Caption = '+'
+      Font.Height = -19
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object RootDirectoryEdit1: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 72
+      Width = 256
+      EditLabel.AnchorSideLeft.Control = RootDirectoryEdit1
+      EditLabel.AnchorSideRight.Control = RootDirectoryEdit1
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = RootDirectoryEdit1
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 55
+      EditLabel.Width = 256
+      EditLabel.Caption = 'Root Directory'
+      EditLabel.ParentColor = False
+      TabOrder = 0
+    end
+    object Label6: TLabel
+      Left = 142
+      Height = 24
+      Top = 96
+      Width = 17
+      Caption = '+'
+      Font.Height = -19
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object SiteOwnerEdit1: TLabeledEdit
+      Left = 22
+      Height = 21
+      Top = 128
+      Width = 256
+      EditLabel.AnchorSideLeft.Control = SiteOwnerEdit1
+      EditLabel.AnchorSideRight.Control = SiteOwnerEdit1
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = SiteOwnerEdit1
+      EditLabel.Left = 22
+      EditLabel.Height = 14
+      EditLabel.Top = 111
+      EditLabel.Width = 256
+      EditLabel.Caption = 'Site Owner'
+      EditLabel.ParentColor = False
+      TabOrder = 1
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 320
+    Height = 256
+    Top = 200
+    Width = 305
+    Caption = 'GroupBox3'
+    ClientHeight = 238
+    ClientWidth = 301
+    TabOrder = 4
+    object StylesheetEdit1: TLabeledEdit
+      Left = 160
+      Height = 21
+      Top = 37
+      Width = 121
+      EditLabel.AnchorSideLeft.Control = StylesheetEdit1
+      EditLabel.AnchorSideRight.Control = StylesheetEdit1
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = StylesheetEdit1
+      EditLabel.Left = 160
+      EditLabel.Height = 14
+      EditLabel.Top = 20
+      EditLabel.Width = 121
+      EditLabel.Caption = 'Stylesheets'
+      EditLabel.ParentColor = False
+      TabOrder = 0
+    end
+    object Label7: TLabel
+      Left = 28
+      Height = 14
+      Top = 37
+      Width = 84
+      Caption = 'Work Directory +'
+      ParentColor = False
+    end
+  end
+end

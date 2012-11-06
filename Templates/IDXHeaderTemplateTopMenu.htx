@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!-- @~ClientName~@ -->
+  <head>
+    <link href="@~DeployURL~@Stylesheets/TheCustomizedWebsite.css" type="text/css" rel="stylesheet">
+    <script src="@~DeployBaseURL~@Javascripts/ddmenu-IDX.js" type="text/javascript"></script>
+    <script src="@~DeployURL~@Javascripts/IDXHeaderFooter.js" type="text/javascript"></script>
+    <title>@~Title~@</title>
+  </head>
+  <body>
+    <table id="IDX-main-content">	
+      <tr>
+        <td>
+          <table id="TCW-Header">
+            <tr>
+              <td>
+                <img id="TCW-top_header_pix" src="@~DeployURL~@Images/Top.jpg">
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!-- @@@@@@@ TCW Top Menu @@@@@@@ -->
+<!-- @@@@@@@ TCW Top Menu @@@@@@@ -->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img id="TCW-header_pix" src="@~DeployURL~@Images/Header.jpg">
+              </td>
+            </tr>
+<!-- @@@@@@@ TCW Top Menu Script @@@@@@@ -->
+<!-- @@@@@@@ TCW Top Menu Script @@@@@@@ -->
+	  </table> 
+          <!-- TCW-Header -->
+	</td>
+      </tr>   
+      <tr>
+        <td>
+          <table id="TCW-IDX-content">
+            <tr>
+              <td>
+                <script type="text/javascript"> TCW_IDXHeader();</script>
+              </td>
+            </tr>
+            <tr>
+              <td>
+<!-- @~ClientName~@ -->
+<!-- End of TCW Global Header Code -->

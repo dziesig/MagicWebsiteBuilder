@@ -1,0 +1,48 @@
+0001    29 August 2012 = Wednesday
+
+0001.0  Current IO file contents:
+
+        TCustomizedWebsite
+          TGeneralWebsiteData
+          TImagesAndBG
+          TWebsiteMenusData
+            TWebsiteMenuData (Primary)
+              MenuPosition (String)
+              TGeneralCSSData
+              TMenuCSSData
+            TWebsiteMenuData (Secondary)
+              MenuPosition (String)
+              TGeneralCSSData
+              TMenuCSSData
+
+0001.1  Planned IO file contents:
+
+        TCustomizedWebsite
+          TGeneralWebsiteData
+          TImagesAndBG
+          TWebsiteMenusData
+            TWebsiteMenuData (Primary)
+              MenuPosition (String)
+              TGeneralCSSData
+              TMenuCSSData
+              TIDXHeaderFooter (Needs Type and Frame )
+              TTCWMenu (Needs Type, Frame needs simplification)
+            TWebsiteMenuData (Secondary)
+              MenuPosition (String)
+              TGeneralCSSData
+              TMenuCSSData
+              TIDXHeaderFooter (Needs Type and Frame )
+              TTCWMenu (Needs Type, Frame needs simplification)
+
+0001.2  Design of TTCWMenu
+
+        List of TTCWMenuItems
+          MenuItem1
+            List of TTCWMenuItems (Children)
+              ChildItem1
+                List ot TTCWMenuItems (GrandChildren)
+                  GrandChildItem1
+             *
+             *
+             *
+          MenuItem2

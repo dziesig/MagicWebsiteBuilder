@@ -1,0 +1,174 @@
+object Form1: TForm1
+  Left = 249
+  Height = 459
+  Top = 166
+  Width = 826
+  Caption = 'Test Tree View'
+  ClientHeight = 459
+  ClientWidth = 826
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '0.9.30.4'
+  object TreeView1: TTreeView
+    Left = 8
+    Height = 408
+    Top = 8
+    Width = 225
+    DefaultItemHeight = 15
+    TabOrder = 0
+    OnClick = TreeView1Click
+  end
+  object InitTest1Button: TButton
+    Left = 256
+    Height = 25
+    Top = 43
+    Width = 75
+    Caption = 'Init Test 1'
+    OnClick = InitTest1ButtonClick
+    TabOrder = 1
+  end
+  object ClearButton: TButton
+    Left = 256
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Clear'
+    OnClick = ClearButtonClick
+    TabOrder = 2
+  end
+  object InitTest2Button: TButton
+    Left = 256
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Init Test 2'
+    OnClick = InitTest2ButtonClick
+    TabOrder = 3
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 376
+    Height = 21
+    Top = 43
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = LabeledEdit1
+    EditLabel.AnchorSideBottom.Control = LabeledEdit1
+    EditLabel.Left = 376
+    EditLabel.Height = 14
+    EditLabel.Top = 26
+    EditLabel.Width = 28
+    EditLabel.Caption = 'Name'
+    EditLabel.ParentColor = False
+    TabOrder = 4
+    Text = 'LabeledEdit1'
+  end
+  object HostRG: TRadioGroup
+    Left = 376
+    Height = 184
+    Top = 72
+    Width = 80
+    AutoFill = True
+    Caption = 'Host'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 166
+    ClientWidth = 76
+    ItemIndex = 0
+    Items.Strings = (
+      'None'
+      'IDX'
+      'Point2'
+      'Wolfnet'
+      'Z-House'
+    )
+    TabOrder = 5
+  end
+  object SaveButton: TButton
+    Left = 256
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Save'
+    OnClick = SaveButtonClick
+    TabOrder = 6
+  end
+  object Memo1: TMemo
+    Left = 480
+    Height = 410
+    Top = 8
+    Width = 334
+    ScrollBars = ssAutoBoth
+    TabOrder = 7
+  end
+  object LoadButton: TButton
+    Left = 256
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'Load'
+    OnClick = LoadButtonClick
+    TabOrder = 8
+  end
+  object Button5: TButton
+    Left = 480
+    Height = 25
+    Top = 424
+    Width = 75
+    Caption = 'Reset'
+    OnClick = Button5Click
+    TabOrder = 9
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 376
+    Height = 21
+    Top = 279
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = LabeledEdit2
+    EditLabel.AnchorSideBottom.Control = LabeledEdit2
+    EditLabel.Left = 376
+    EditLabel.Height = 14
+    EditLabel.Top = 262
+    EditLabel.Width = 20
+    EditLabel.Caption = 'URL'
+    EditLabel.ParentColor = False
+    TabOrder = 10
+    Text = 'LabeledEdit2'
+  end
+  object LabeledEdit3: TLabeledEdit
+    Left = 376
+    Height = 21
+    Top = 320
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = LabeledEdit3
+    EditLabel.AnchorSideBottom.Control = LabeledEdit3
+    EditLabel.Left = 376
+    EditLabel.Height = 14
+    EditLabel.Top = 303
+    EditLabel.Width = 81
+    EditLabel.Caption = 'IDX Header Text'
+    EditLabel.ParentColor = False
+    TabOrder = 11
+    Text = 'LabeledEdit3'
+  end
+  object LabeledEdit4: TLabeledEdit
+    Left = 376
+    Height = 21
+    Top = 360
+    Width = 80
+    EditLabel.AnchorSideLeft.Control = LabeledEdit4
+    EditLabel.AnchorSideBottom.Control = LabeledEdit4
+    EditLabel.Left = 376
+    EditLabel.Height = 14
+    EditLabel.Top = 343
+    EditLabel.Width = 78
+    EditLabel.Caption = 'IDX Footer Text'
+    EditLabel.ParentColor = False
+    TabOrder = 12
+    Text = 'LabeledEdit4'
+  end
+end

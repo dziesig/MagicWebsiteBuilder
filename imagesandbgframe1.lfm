@@ -1,0 +1,256 @@
+object ImagesAndBGFrame: TImagesAndBGFrame
+  Left = 0
+  Height = 540
+  Top = 0
+  Width = 872
+  ClientHeight = 540
+  ClientWidth = 872
+  Color = clBackground
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 381
+  DesignTop = 209
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 411
+    Top = 8
+    Width = 462
+    Caption = 'Images'
+    ClientHeight = 393
+    ClientWidth = 458
+    Color = clGray
+    ParentColor = False
+    TabOrder = 0
+    object BackgroundImage: TImage
+      Left = 14
+      Height = 370
+      Top = 8
+      Width = 434
+    end
+    object TopImage: TImage
+      Left = 62
+      Height = 24
+      Top = 8
+      Width = 336
+    end
+    object UpperMenuImage: TImage
+      Left = 62
+      Height = 26
+      Top = 32
+      Width = 338
+    end
+    object HeaderImage: TImage
+      Left = 62
+      Height = 112
+      Top = 64
+      Width = 338
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object UpperDropDownImage: TImage
+      Left = 104
+      Height = 82
+      Top = 72
+      Width = 74
+    end
+    object LowerMenuImage: TImage
+      Left = 62
+      Height = 24
+      Top = 176
+      Width = 338
+    end
+    object BodyImage: TImage
+      Left = 62
+      Height = 146
+      Top = 200
+      Width = 336
+    end
+    object LowerDropDownImage: TImage
+      Left = 294
+      Height = 82
+      Top = 208
+      Width = 74
+    end
+    object UpperSelectedDDImage: TImage
+      Left = 102
+      Height = 90
+      Top = 216
+      Width = 90
+    end
+    object LowerSelectedDDImage: TImage
+      Left = 227
+      Height = 90
+      Top = 245
+      Width = 90
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 480
+    Height = 107
+    Top = 8
+    Width = 182
+    Caption = 'ImportImage'
+    ClientHeight = 89
+    ClientWidth = 178
+    TabOrder = 1
+    object ImportBackgroundButton: TButton
+      Left = 14
+      Height = 25
+      Top = 7
+      Width = 75
+      Caption = 'Background'
+      OnClick = ImportBackgroundButtonClick
+      TabOrder = 0
+    end
+    object ImportBodyButton: TButton
+      Left = 14
+      Height = 25
+      Top = 33
+      Width = 75
+      Caption = 'Body'
+      OnClick = ImportBodyButtonClick
+      TabOrder = 1
+    end
+    object ImportBlogHeaderButton: TButton
+      Left = 14
+      Height = 25
+      Top = 59
+      Width = 75
+      Caption = 'Blog Header'
+      OnClick = ImportBlogHeaderButtonClick
+      TabOrder = 2
+    end
+    object ImportTopButton: TButton
+      Left = 94
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Top'
+      OnClick = ImportTopButtonClick
+      TabOrder = 3
+    end
+    object ImportHeaderButton: TButton
+      Left = 94
+      Height = 25
+      Top = 33
+      Width = 75
+      Caption = 'Header'
+      OnClick = ImportHeaderButtonClick
+      TabOrder = 4
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 672
+    Height = 107
+    Top = 8
+    Width = 182
+    Caption = 'ClearImage'
+    ClientHeight = 89
+    ClientWidth = 178
+    TabOrder = 2
+    object ClearBackgroundButton: TButton
+      Left = 14
+      Height = 25
+      Top = 7
+      Width = 75
+      Caption = 'Background'
+      OnClick = ClearBackgroundButtonClick
+      TabOrder = 0
+    end
+    object ClearBodyButton: TButton
+      Left = 14
+      Height = 25
+      Top = 32
+      Width = 75
+      Caption = 'Body'
+      OnClick = ClearBodyButtonClick
+      TabOrder = 1
+    end
+    object ClearBlogHeaderButton: TButton
+      Left = 14
+      Height = 25
+      Top = 59
+      Width = 75
+      Caption = 'Blog Header'
+      OnClick = ClearBlogHeaderButtonClick
+      TabOrder = 2
+    end
+    object ClearTopButton: TButton
+      Left = 94
+      Height = 25
+      Top = 7
+      Width = 75
+      Caption = 'Top'
+      OnClick = ClearTopButtonClick
+      TabOrder = 3
+    end
+    object ClearHeaderButton: TButton
+      Left = 94
+      Height = 25
+      Top = 33
+      Width = 75
+      Caption = 'Header'
+      OnClick = ClearHeaderButtonClick
+      TabOrder = 4
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 480
+    Height = 168
+    Top = 128
+    Width = 374
+    Caption = 'Blog Header Image'
+    ClientHeight = 150
+    ClientWidth = 370
+    TabOrder = 3
+    object BlogHeaderImage: TImage
+      Left = 14
+      Height = 105
+      Top = 31
+      Width = 339
+    end
+  end
+  object GroupBox5: TGroupBox
+    Left = 488
+    Height = 80
+    Top = 312
+    Width = 161
+    Caption = 'Background'
+    ClientHeight = 62
+    ClientWidth = 157
+    TabOrder = 4
+    inline BackgroundColorFrame: TColorFrame
+      Left = 6
+      Top = 1
+      inherited ColorEdit: TLabeledEdit
+        EditLabel.Width = 64
+      end
+    end
+  end
+  object GroupBox6: TGroupBox
+    Left = 680
+    Height = 80
+    Top = 312
+    Width = 161
+    Caption = 'Body'
+    ClientHeight = 62
+    ClientWidth = 157
+    TabOrder = 5
+    inline BodyColorFrame: TColorFrame
+      Left = 6
+      inherited ColorEdit: TLabeledEdit
+        Left = 1
+        Top = 17
+        EditLabel.Left = 1
+        EditLabel.Top = 0
+        EditLabel.Width = 64
+      end
+    end
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Title = 'Open existing image'
+    Options = [ofShareAware, ofEnableSizing, ofViewDetail, ofAutoPreview]
+    left = 189
+    top = 431
+  end
+end

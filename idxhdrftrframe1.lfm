@@ -1,0 +1,160 @@
+object IDXHdrFtrFrame: TIDXHdrFtrFrame
+  Left = 0
+  Height = 519
+  Top = 0
+  Width = 895
+  ClientHeight = 519
+  ClientWidth = 895
+  TabOrder = 0
+  DesignLeft = 408
+  DesignTop = 217
+  object Label1: TLabel
+    Left = 122
+    Height = 14
+    Top = 504
+    Width = 79
+    Anchors = [akLeft, akBottom]
+    Caption = 'IDXHdrFtrFrame'
+    ParentColor = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 268
+    Top = 8
+    Width = 808
+    Caption = 'IDX Defaults'
+    ClientHeight = 250
+    ClientWidth = 804
+    TabOrder = 0
+    object GroupBox2: TGroupBox
+      Left = 22
+      Height = 97
+      Top = 8
+      Width = 768
+      Caption = 'IDX Header'
+      ClientHeight = 79
+      ClientWidth = 764
+      TabOrder = 0
+      object IDXHeaderFontFacesEdit: TLabeledEdit
+        Left = 12
+        Height = 21
+        Top = 38
+        Width = 201
+        EditLabel.AnchorSideLeft.Control = IDXHeaderFontFacesEdit
+        EditLabel.AnchorSideBottom.Control = IDXHeaderFontFacesEdit
+        EditLabel.Left = 12
+        EditLabel.Height = 14
+        EditLabel.Top = 21
+        EditLabel.Width = 54
+        EditLabel.Caption = 'Font Faces'
+        EditLabel.ParentColor = False
+        TabOrder = 0
+      end
+      object IDXHeaderTextSizeTB: TTrackBar
+        Left = 368
+        Height = 30
+        Top = 33
+        Width = 382
+        Max = 200
+        Min = 1
+        OnChange = IDXHeaderTextSizeTBChange
+        Position = 10
+        TabOrder = 1
+      end
+      object Label2: TLabel
+        Left = 384
+        Height = 14
+        Top = 20
+        Width = 20
+        Caption = 'Size'
+        ParentColor = False
+      end
+      object HeaderSizeLabel: TLabel
+        Left = 542
+        Height = 14
+        Top = 64
+        Width = 34
+        Caption = '1.0 em'
+        ParentColor = False
+      end
+      object GroupBox4: TGroupBox
+        Left = 238
+        Height = 73
+        Top = 0
+        Width = 113
+        Caption = 'Text'
+        ClientHeight = 55
+        ClientWidth = 109
+        TabOrder = 2
+        inline ColorFrame1: TColorFrame
+          Left = -2
+        end
+      end
+    end
+    object GroupBox3: TGroupBox
+      Left = 22
+      Height = 97
+      Top = 128
+      Width = 768
+      Caption = 'IDX Footer'
+      ClientHeight = 79
+      ClientWidth = 764
+      TabOrder = 1
+      object IDXFooterFontFacesEdit: TLabeledEdit
+        Left = 12
+        Height = 21
+        Top = 38
+        Width = 201
+        EditLabel.AnchorSideLeft.Control = IDXFooterFontFacesEdit
+        EditLabel.AnchorSideBottom.Control = IDXFooterFontFacesEdit
+        EditLabel.Left = 12
+        EditLabel.Height = 14
+        EditLabel.Top = 21
+        EditLabel.Width = 54
+        EditLabel.Caption = 'Font Faces'
+        EditLabel.ParentColor = False
+        TabOrder = 0
+      end
+      object Label3: TLabel
+        Left = 384
+        Height = 14
+        Top = 20
+        Width = 20
+        Caption = 'Size'
+        ParentColor = False
+      end
+      object IDXFooterTextSizeTB: TTrackBar
+        Left = 368
+        Height = 30
+        Top = 33
+        Width = 382
+        Max = 200
+        Min = 1
+        OnChange = IDXFooterTextSizeTBChange
+        Position = 10
+        TabOrder = 1
+      end
+      object FooterSizeLabel: TLabel
+        Left = 542
+        Height = 14
+        Top = 64
+        Width = 34
+        Caption = '1.0 em'
+        ParentColor = False
+      end
+      object GroupBox5: TGroupBox
+        Left = 238
+        Height = 73
+        Top = 0
+        Width = 113
+        Caption = 'Text'
+        ClientHeight = 55
+        ClientWidth = 109
+        TabOrder = 2
+        inline ColorFrame2: TColorFrame
+          Left = -2
+        end
+      end
+    end
+  end
+end
