@@ -6,6 +6,7 @@ object ImagesAndBGFrame: TImagesAndBGFrame
   ClientHeight = 540
   ClientWidth = 872
   Color = clBackground
+  LCLVersion = '1.0.2.0'
   ParentColor = False
   TabOrder = 0
   DesignLeft = 381

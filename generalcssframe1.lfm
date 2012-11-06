@@ -5,6 +5,7 @@ object GeneralCSSFrame: TGeneralCSSFrame
   Width = 761
   ClientHeight = 581
   ClientWidth = 761
+  LCLVersion = '1.0.2.0'
   TabOrder = 0
   DesignLeft = 816
   DesignTop = 145
@@ -82,6 +83,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 32
       Width = 55
       EditLabel.AnchorSideLeft.Control = BarBorderSizeEdit
+      EditLabel.AnchorSideRight.Control = BarBorderSizeEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarBorderSizeEdit
       EditLabel.Left = 144
       EditLabel.Height = 14
@@ -135,6 +138,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 32
       Width = 45
       EditLabel.AnchorSideLeft.Control = BarSepSizeEdit
+      EditLabel.AnchorSideRight.Control = BarSepSizeEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarSepSizeEdit
       EditLabel.Left = 404
       EditLabel.Height = 14
@@ -163,6 +168,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 95
       Width = 556
       EditLabel.AnchorSideLeft.Control = BarCustomCSSEdit
+      EditLabel.AnchorSideRight.Control = BarCustomCSSEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarCustomCSSEdit
       EditLabel.Left = 12
       EditLabel.Height = 14
@@ -188,6 +195,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 160
       Width = 55
       EditLabel.AnchorSideLeft.Control = BarBorderTopSizeEdit
+      EditLabel.AnchorSideRight.Control = BarBorderTopSizeEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarBorderTopSizeEdit
       EditLabel.Left = 143
       EditLabel.Height = 14
@@ -215,6 +224,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 160
       Width = 55
       EditLabel.AnchorSideLeft.Control = BarBorderBottomSizeEdit
+      EditLabel.AnchorSideRight.Control = BarBorderBottomSizeEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarBorderBottomSizeEdit
       EditLabel.Left = 244
       EditLabel.Height = 14
@@ -242,6 +253,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 160
       Width = 55
       EditLabel.AnchorSideLeft.Control = BarBorderLeftSizeEdit
+      EditLabel.AnchorSideRight.Control = BarBorderLeftSizeEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarBorderLeftSizeEdit
       EditLabel.Left = 346
       EditLabel.Height = 14
@@ -269,6 +282,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 160
       Width = 55
       EditLabel.AnchorSideLeft.Control = BarBorderRightSizeEdit
+      EditLabel.AnchorSideRight.Control = BarBorderRightSizeEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = BarBorderRightSizeEdit
       EditLabel.Left = 448
       EditLabel.Height = 14
@@ -306,6 +321,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 32
       Width = 52
       EditLabel.AnchorSideLeft.Control = ZIndexEdit
+      EditLabel.AnchorSideRight.Control = ZIndexEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = ZIndexEdit
       EditLabel.Left = 13
       EditLabel.Height = 14
@@ -360,6 +377,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 32
       Width = 121
       EditLabel.AnchorSideLeft.Control = EvenSpacingBoxWidthEdit
+      EditLabel.AnchorSideRight.Control = EvenSpacingBoxWidthEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = EvenSpacingBoxWidthEdit
       EditLabel.Left = 316
       EditLabel.Height = 14
@@ -396,6 +415,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 17
       Width = 110
       EditLabel.AnchorSideLeft.Control = DropDownWidthEdit
+      EditLabel.AnchorSideRight.Control = DropDownWidthEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = DropDownWidthEdit
       EditLabel.Left = 86
       EditLabel.Height = 14
@@ -411,6 +432,8 @@ object GeneralCSSFrame: TGeneralCSSFrame
       Top = 17
       Width = 32
       EditLabel.AnchorSideLeft.Control = DropDownTopEdit
+      EditLabel.AnchorSideRight.Control = DropDownTopEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = DropDownTopEdit
       EditLabel.Left = 12
       EditLabel.Height = 14

@@ -6,6 +6,7 @@ object GeneralFrame: TGeneralFrame
   ClientHeight = 630
   ClientWidth = 882
   Color = clMedGray
+  LCLVersion = '1.0.2.0'
   ParentColor = False
   TabOrder = 0
   DesignLeft = 340
@@ -25,6 +26,8 @@ object GeneralFrame: TGeneralFrame
       Top = 16
       Width = 232
       EditLabel.AnchorSideLeft.Control = ClientEdit
+      EditLabel.AnchorSideRight.Control = ClientEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = ClientEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -40,6 +43,8 @@ object GeneralFrame: TGeneralFrame
       Top = 64
       Width = 232
       EditLabel.AnchorSideLeft.Control = Point2URLEdit
+      EditLabel.AnchorSideRight.Control = Point2URLEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = Point2URLEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -55,6 +60,8 @@ object GeneralFrame: TGeneralFrame
       Top = 112
       Width = 232
       EditLabel.AnchorSideLeft.Control = IDXURLEdit
+      EditLabel.AnchorSideRight.Control = IDXURLEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = IDXURLEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -70,6 +77,8 @@ object GeneralFrame: TGeneralFrame
       Top = 160
       Width = 232
       EditLabel.AnchorSideLeft.Control = WolfnetURLEdit
+      EditLabel.AnchorSideRight.Control = WolfnetURLEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = WolfnetURLEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -85,6 +94,8 @@ object GeneralFrame: TGeneralFrame
       Top = 208
       Width = 232
       EditLabel.AnchorSideLeft.Control = ZHouseURLEdit
+      EditLabel.AnchorSideRight.Control = ZHouseURLEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = ZHouseURLEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -100,6 +111,8 @@ object GeneralFrame: TGeneralFrame
       Top = 268
       Width = 232
       EditLabel.AnchorSideLeft.Control = NoHostURLEdit
+      EditLabel.AnchorSideRight.Control = NoHostURLEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = NoHostURLEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -181,6 +194,8 @@ object GeneralFrame: TGeneralFrame
       Top = 24
       Width = 48
       EditLabel.AnchorSideLeft.Control = CopyrightInitialYearEdit
+      EditLabel.AnchorSideRight.Control = CopyrightInitialYearEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = CopyrightInitialYearEdit
       EditLabel.Left = 22
       EditLabel.Height = 14
@@ -196,6 +211,8 @@ object GeneralFrame: TGeneralFrame
       Top = 24
       Width = 354
       EditLabel.AnchorSideLeft.Control = CopyrightByEdit
+      EditLabel.AnchorSideRight.Control = CopyrightByEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = CopyrightByEdit
       EditLabel.Left = 78
       EditLabel.Height = 14

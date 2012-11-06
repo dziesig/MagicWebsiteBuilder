@@ -1,10 +1,10 @@
 object MWBMain: TMWBMain
   Left = 98
-  Height = 812
-  Top = 20
+  Height = 736
+  Top = 0
   Width = 1174
   Caption = 'Magic Website Builder'
-  ClientHeight = 792
+  ClientHeight = 716
   ClientWidth = 1174
   Menu = MainMenu1
   OnCloseQuery = FormCloseQuery
@@ -88,7 +88,7 @@ object MWBMain: TMWBMain
   object StatusBar1: TStatusBar
     Left = 0
     Height = 23
-    Top = 769
+    Top = 693
     Width = 1174
     Panels = <    
       item
@@ -104,7 +104,7 @@ object MWBMain: TMWBMain
   end
   object PageControl1: TPageControl
     Left = 0
-    Height = 743
+    Height = 667
     Top = 26
     Width = 1174
     ActivePage = TabSheet1
@@ -115,13 +115,13 @@ object MWBMain: TMWBMain
     OnChanging = PageControl1Changing
     object TabSheet1: TTabSheet
       Caption = 'General'
-      ClientHeight = 717
+      ClientHeight = 641
       ClientWidth = 1166
       inline GeneralFrame1: TGeneralFrame
-        Height = 717
+        Height = 641
         Width = 1166
         Align = alClient
-        ClientHeight = 717
+        ClientHeight = 641
         ClientWidth = 1166
         Color = clCream
         DesignTop = 219

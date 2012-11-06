@@ -20,8 +20,8 @@ object MenuSelectFrame: TMenuSelectFrame
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Primary Menu'
-      ClientHeight = 1305
-      ClientWidth = 2202
+      ClientHeight = 2610
+      ClientWidth = 4404
       object PrimaryMenuPositionRG: TRadioGroup
         Left = 0
         Height = 45
@@ -75,8 +75,8 @@ object MenuSelectFrame: TMenuSelectFrame
           ActivePage = MenusFrame1.TabSheet3
           TabIndex = 2
           inherited TabSheet1: TTabSheet
-            ClientHeight = 973
-            ClientWidth = 1949
+            ClientHeight = 2027
+            ClientWidth = 3713
             inherited MenuItemFrame1: TMenuItemFrame
               Height = 532
               Width = 878
@@ -128,8 +128,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet2: TTabSheet
-            ClientHeight = 1586
-            ClientWidth = 2642
+            ClientHeight = 2640
+            ClientWidth = 4406
             inherited GeneralCSSFrame1: TGeneralCSSFrame
               Height = 532
               Width = 878
@@ -180,8 +180,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet3: TTabSheet
-            ClientHeight = 1075
-            ClientWidth = 1973
+            ClientHeight = 2129
+            ClientWidth = 3737
             inherited MenuCSSFrame1: TMenuCSSFrame
               Height = 548
               Width = 1091
@@ -259,8 +259,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet4: TTabSheet
-            ClientHeight = 2118
-            ClientWidth = 3520
+            ClientHeight = 3172
+            ClientWidth = 5284
             inherited IDXHdrFtrFrame1: TIDXHdrFtrFrame
               Height = 532
               Width = 878
@@ -297,8 +297,8 @@ object MenuSelectFrame: TMenuSelectFrame
     end
     object TabSheet2: TTabSheet
       Caption = 'Secondary Menu'
-      ClientHeight = 1271
-      ClientWidth = 2194
+      ClientHeight = 2542
+      ClientWidth = 4388
       object SecondaryMenuPositionRG: TRadioGroup
         Left = 0
         Height = 45
@@ -351,8 +351,8 @@ object MenuSelectFrame: TMenuSelectFrame
           ActivePage = nil
           TabIndex = -1
           inherited TabSheet1: TTabSheet
-            ClientHeight = 973
-            ClientWidth = 1949
+            ClientHeight = 2027
+            ClientWidth = 3713
             inherited MenuItemFrame1: TMenuItemFrame
               Height = 532
               Width = 878
@@ -404,8 +404,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet2: TTabSheet
-            ClientHeight = 1586
-            ClientWidth = 2642
+            ClientHeight = 2640
+            ClientWidth = 4406
             inherited GeneralCSSFrame1: TGeneralCSSFrame
               Height = 532
               Width = 878
@@ -456,8 +456,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet3: TTabSheet
-            ClientHeight = 2118
-            ClientWidth = 3520
+            ClientHeight = 3172
+            ClientWidth = 5284
             inherited MenuCSSFrame1: TMenuCSSFrame
               Height = 532
               Width = 878
@@ -535,8 +535,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet4: TTabSheet
-            ClientHeight = 2118
-            ClientWidth = 3520
+            ClientHeight = 3172
+            ClientWidth = 5284
             inherited IDXHdrFtrFrame1: TIDXHdrFtrFrame
               Height = 532
               Width = 878
@@ -572,4 +572,4 @@ object MenuSelectFrame: TMenuSelectFrame
       end
     end
   end
-end
+end

@@ -22,8 +22,8 @@ object MenusFrame: TMenusFrame
     OnChanging = PageControl1Changing
     object TabSheet1: TTabSheet
       Caption = 'Item'
-      ClientHeight = 527
-      ClientWidth = 882
+      ClientHeight = 1054
+      ClientWidth = 1764
       object Button1: TButton
         Left = 284
         Height = 25
@@ -85,8 +85,8 @@ object MenusFrame: TMenusFrame
     end
     object TabSheet2: TTabSheet
       Caption = 'General CSS'
-      ClientHeight = 527
-      ClientWidth = 882
+      ClientHeight = 1054
+      ClientWidth = 1764
       inline GeneralCSSFrame1: TGeneralCSSFrame
         Height = 532
         Width = 878
@@ -138,8 +138,8 @@ object MenusFrame: TMenusFrame
     end
     object TabSheet3: TTabSheet
       Caption = 'Menu CSS'
-      ClientHeight = 527
-      ClientWidth = 882
+      ClientHeight = 1054
+      ClientWidth = 1764
       inline MenuCSSFrame1: TMenuCSSFrame
         Height = 532
         Width = 878
@@ -218,8 +218,8 @@ object MenusFrame: TMenusFrame
     end
     object TabSheet4: TTabSheet
       Caption = 'IDX Header/Footer'
-      ClientHeight = 527
-      ClientWidth = 882
+      ClientHeight = 1054
+      ClientWidth = 1764
       inline IDXHdrFtrFrame1: TIDXHdrFtrFrame
         Height = 532
         Width = 878
@@ -257,4 +257,4 @@ object MenusFrame: TMenusFrame
     Caption = 'MenusFrame'
     TabOrder = 1
   end
-end
+end

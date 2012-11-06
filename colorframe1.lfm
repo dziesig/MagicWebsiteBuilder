@@ -5,6 +5,7 @@ object ColorFrame: TColorFrame
   Width = 115
   ClientHeight = 51
   ClientWidth = 115
+  LCLVersion = '1.0.2.0'
   TabOrder = 0
   DesignLeft = 400
   DesignTop = 135
@@ -26,6 +27,8 @@ object ColorFrame: TColorFrame
     Top = 21
     Width = 64
     EditLabel.AnchorSideLeft.Control = ColorEdit
+    EditLabel.AnchorSideRight.Control = ColorEdit
+    EditLabel.AnchorSideRight.Side = asrBottom
     EditLabel.AnchorSideBottom.Control = ColorEdit
     EditLabel.Left = 8
     EditLabel.Height = 14

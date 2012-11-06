@@ -483,4 +483,4 @@ object MenuItemFrame: TMenuItemFrame
       Action = PasteChildrenOnly2
     end
   end
-end
+end
