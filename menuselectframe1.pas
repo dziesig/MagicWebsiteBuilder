@@ -78,6 +78,7 @@ constructor TMenuSelectFrame.Create(AOwner: TComponent);
 begin
   inherited Create(AOwner);
   PageControl1.TabIndex := 0;
+  PrimaryMenuPositionRG.ItemIndex := 0;
 end;
 
 procedure TMenuSelectFrame.Save(Data: TWebsiteMenusData);
@@ -115,4 +116,4 @@ begin
 end;
 
 end.
-
+

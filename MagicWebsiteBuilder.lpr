@@ -5,6 +5,7 @@ program MagicWebsiteBuilder;
 uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
+  clocale,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, printer4lazarus, MWBMain1, CursorStackUnit1, generics1, Common1,

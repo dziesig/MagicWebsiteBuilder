@@ -121,7 +121,12 @@ end;
 procedure TWebsiteMenuData.MakeNew;
 begin
   inherited MakeNew;
-  fMenuPosition := '';  // Empty string is undefined = Primary Top, Secondary None;
+  if fName = 'PrimaryMenu' then
+    fMenuPosition := 'Top'
+  else if fName = 'SecondaryMenu' then
+    fMenuPosition := 'None'
+  else
+    fMenuPosition := '';  // Empty string is undefined
   fGeneralCSSData := TGeneralCSSData.Create( Parent, Name, self );
   fMenuCSSData    := TMenuCssData.Create( Parent, Name, self );
   fIDXHdrFtrData  := TIDXHdrFtr.Create( Parent, Name, self );

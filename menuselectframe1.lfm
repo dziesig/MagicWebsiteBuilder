@@ -5,7 +5,6 @@ object MenuSelectFrame: TMenuSelectFrame
   Width = 1107
   ClientHeight = 681
   ClientWidth = 1107
-  LCLVersion = '1.0.1.3'
   TabOrder = 0
   DesignLeft = 158
   DesignTop = 46
@@ -20,13 +19,13 @@ object MenuSelectFrame: TMenuSelectFrame
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Primary Menu'
-      ClientHeight = 2610
-      ClientWidth = 4404
+      ClientHeight = 646
+      ClientWidth = 1101
       object PrimaryMenuPositionRG: TRadioGroup
         Left = 0
         Height = 45
         Top = 0
-        Width = 1099
+        Width = 1101
         Align = alTop
         AutoFill = True
         Caption = 'Primary Position'
@@ -38,8 +37,8 @@ object MenuSelectFrame: TMenuSelectFrame
         ChildSizing.ShrinkVertical = crsScaleChilds
         ChildSizing.Layout = cclLeftToRightThenTopToBottom
         ChildSizing.ControlsPerLine = 4
-        ClientHeight = 26
-        ClientWidth = 1095
+        ClientHeight = 27
+        ClientWidth = 1099
         Columns = 4
         ItemIndex = 0
         Items.Strings = (
@@ -54,29 +53,29 @@ object MenuSelectFrame: TMenuSelectFrame
       object Panel2: TPanel
         Left = 0
         Height = 18
-        Top = 637
-        Width = 1099
+        Top = 628
+        Width = 1101
         Align = alBottom
         Caption = 'MenuSelectFrame'
         TabOrder = 1
       end
       inline MenusFrame1: TMenusFrame
-        Height = 592
+        Height = 583
         Top = 45
-        Width = 1099
+        Width = 1101
         Align = alClient
-        ClientHeight = 592
-        ClientWidth = 1099
+        ClientHeight = 583
+        ClientWidth = 1101
         TabOrder = 2
         DesignLeft = 549
         inherited PageControl1: TPageControl
-          Height = 574
-          Width = 1099
+          Height = 565
+          Width = 1101
           ActivePage = MenusFrame1.TabSheet3
           TabIndex = 2
           inherited TabSheet1: TTabSheet
-            ClientHeight = 2027
-            ClientWidth = 3713
+            ClientHeight = 530
+            ClientWidth = 1095
             inherited MenuItemFrame1: TMenuItemFrame
               Height = 532
               Width = 878
@@ -128,8 +127,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet2: TTabSheet
-            ClientHeight = 2640
-            ClientWidth = 4406
+            ClientHeight = 530
+            ClientWidth = 1095
             inherited GeneralCSSFrame1: TGeneralCSSFrame
               Height = 532
               Width = 878
@@ -180,43 +179,85 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet3: TTabSheet
-            ClientHeight = 2129
-            ClientWidth = 3737
+            ClientHeight = 530
+            ClientWidth = 1095
             inherited MenuCSSFrame1: TMenuCSSFrame
-              Height = 548
-              Width = 1091
+              Height = 530
+              Width = 1095
               Align = alClient
-              ClientHeight = 548
-              ClientWidth = 1091
+              ClientHeight = 530
+              ClientWidth = 1095
               DesignLeft = 841
               DesignTop = 146
               inherited Label1: TLabel
-                Top = 536
+                Height = 18
+                Top = 514
+                Width = 106
               end
               inherited GroupBox1: TGroupBox
                 inherited GroupBox2: TGroupBox
                   inherited ColorFrame1: TColorFrame
                     Left = 4
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
                 end
                 inherited GroupBox3: TGroupBox
                   inherited ColorFrame2: TColorFrame
                     Left = 6
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
                 end
                 inherited GroupBox4: TGroupBox
                   inherited ColorFrame3: TColorFrame
                     Left = 6
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
                 end
                 inherited GroupBox5: TGroupBox
                   inherited ColorFrame4: TColorFrame
                     Left = 4
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
+                end
+                inherited MainUnselectedArrowImageCB: TComboBox
+                  Height = 25
+                  ItemHeight = 0
+                end
+                inherited Label2: TLabel
+                  Height = 18
+                  Width = 88
+                end
+                inherited MainSelectedArrowImageCB: TComboBox
+                  Height = 25
+                  ItemHeight = 0
+                end
+                inherited Label3: TLabel
+                  Height = 18
+                  Width = 88
                 end
               end
               inherited GroupBox6: TGroupBox
@@ -224,43 +265,99 @@ object MenuSelectFrame: TMenuSelectFrame
                   inherited ColorFrame5: TColorFrame
                     Left = 4
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
                 end
                 inherited GroupBox8: TGroupBox
                   inherited ColorFrame6: TColorFrame
                     Left = 6
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
                 end
                 inherited GroupBox9: TGroupBox
                   inherited ColorFrame7: TColorFrame
                     Left = 6
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
                 end
                 inherited GroupBox10: TGroupBox
                   inherited ColorFrame8: TColorFrame
                     Left = 4
                     Top = -3
+                    inherited ColorEdit: TLabeledEdit
+                      Height = 23
+                      EditLabel.Height = 18
+                      EditLabel.Top = 0
+                      EditLabel.Width = 64
+                    end
                   end
+                end
+                inherited SubUnselectedArrowImageCB: TComboBox
+                  Height = 25
+                  ItemHeight = 0
+                end
+                inherited Label4: TLabel
+                  Height = 18
+                  Width = 88
+                end
+                inherited SubSelectedArrowImageCB: TComboBox
+                  Height = 25
+                  ItemHeight = 0
+                end
+                inherited Label5: TLabel
+                  Height = 18
+                  Width = 88
                 end
               end
               inherited GroupBox16: TGroupBox
                 inherited TextSizeLabel: TLabel
-                  Width = 19
+                  Height = 18
+                  Width = 26
                   Caption = '7px'
                 end
+                inherited Label6: TLabel
+                  Height = 18
+                  Width = 28
+                end
+                inherited FontBoldCB: TCheckBox
+                  Height = 22
+                  Width = 55
+                end
                 inherited TextSizeTB: TTrackBar
+                  Height = 41
                   Max = 28
                   Min = 8
                   OnChange = nil
+                end
+                inherited FontFacesEdit: TLabeledEdit
+                  Height = 23
+                  EditLabel.Height = 18
+                  EditLabel.Top = 8
+                  EditLabel.Width = 257
                 end
               end
             end
           end
           inherited TabSheet4: TTabSheet
-            ClientHeight = 3172
-            ClientWidth = 5284
+            ClientHeight = 530
+            ClientWidth = 1095
             inherited IDXHdrFtrFrame1: TIDXHdrFtrFrame
               Height = 532
               Width = 878
@@ -290,15 +387,15 @@ object MenuSelectFrame: TMenuSelectFrame
           end
         end
         inherited Panel1: TPanel
-          Top = 574
-          Width = 1099
+          Top = 565
+          Width = 1101
         end
       end
     end
     object TabSheet2: TTabSheet
       Caption = 'Secondary Menu'
-      ClientHeight = 2542
-      ClientWidth = 4388
+      ClientHeight = 646
+      ClientWidth = 1101
       object SecondaryMenuPositionRG: TRadioGroup
         Left = 0
         Height = 45
@@ -315,8 +412,8 @@ object MenuSelectFrame: TMenuSelectFrame
         ChildSizing.ShrinkVertical = crsScaleChilds
         ChildSizing.Layout = cclLeftToRightThenTopToBottom
         ChildSizing.ControlsPerLine = 4
-        ClientHeight = 26
-        ClientWidth = 1087
+        ClientHeight = 27
+        ClientWidth = 1089
         Columns = 4
         ItemIndex = 0
         Items.Strings = (
@@ -351,8 +448,8 @@ object MenuSelectFrame: TMenuSelectFrame
           ActivePage = nil
           TabIndex = -1
           inherited TabSheet1: TTabSheet
-            ClientHeight = 2027
-            ClientWidth = 3713
+            ClientHeight = 536
+            ClientWidth = 1087
             inherited MenuItemFrame1: TMenuItemFrame
               Height = 532
               Width = 878
@@ -404,8 +501,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet2: TTabSheet
-            ClientHeight = 2640
-            ClientWidth = 4406
+            ClientHeight = 536
+            ClientWidth = 1087
             inherited GeneralCSSFrame1: TGeneralCSSFrame
               Height = 532
               Width = 878
@@ -456,8 +553,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet3: TTabSheet
-            ClientHeight = 3172
-            ClientWidth = 5284
+            ClientHeight = 536
+            ClientWidth = 1087
             inherited MenuCSSFrame1: TMenuCSSFrame
               Height = 532
               Width = 878
@@ -494,6 +591,12 @@ object MenuSelectFrame: TMenuSelectFrame
                     Top = -3
                   end
                 end
+                inherited MainUnselectedArrowImageCB: TComboBox
+                  ItemHeight = 0
+                end
+                inherited MainSelectedArrowImageCB: TComboBox
+                  ItemHeight = 0
+                end
               end
               inherited GroupBox6: TGroupBox
                 inherited GroupBox7: TGroupBox
@@ -520,6 +623,12 @@ object MenuSelectFrame: TMenuSelectFrame
                     Top = -3
                   end
                 end
+                inherited SubUnselectedArrowImageCB: TComboBox
+                  ItemHeight = 0
+                end
+                inherited SubSelectedArrowImageCB: TComboBox
+                  ItemHeight = 0
+                end
               end
               inherited GroupBox16: TGroupBox
                 inherited TextSizeLabel: TLabel
@@ -535,8 +644,8 @@ object MenuSelectFrame: TMenuSelectFrame
             end
           end
           inherited TabSheet4: TTabSheet
-            ClientHeight = 3172
-            ClientWidth = 5284
+            ClientHeight = 536
+            ClientWidth = 1087
             inherited IDXHdrFtrFrame1: TIDXHdrFtrFrame
               Height = 532
               Width = 878
@@ -572,4 +681,4 @@ object MenuSelectFrame: TMenuSelectFrame
       end
     end
   end
-end
+end

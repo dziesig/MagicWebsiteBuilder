@@ -73,7 +73,7 @@ object AboutForm: TAboutForm
     ParentColor = False
   end
   object LastBuildLabel: TLabel
-    Left = 104
+    Left = 112
     Height = 18
     Top = 72
     Width = 101
